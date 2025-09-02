@@ -30,7 +30,7 @@
             <TextBlock
                 Grid.Row="0"
                 Grid.Column="0"
-                Text="{Binding Name}"
+                Text="{Binding DisplayName}"
                 FontSize="24"
                 FontWeight="Black"
                 Margin="0 15 0 5"

@@ -84,7 +84,7 @@
                 Grid.Row="0"
                 Grid.Column="1"
                 Margin="10 0"
-                Text="{Binding Name}"
+                Text="{Binding DisplayName}"
                 FontWeight="DemiBold"
                 TextTrimming="CharacterEllipsis"
                 VerticalAlignment="Center" />
