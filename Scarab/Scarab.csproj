@@ -6,12 +6,12 @@
         <LangVersion>10</LangVersion>
         <Nullable>enable</Nullable>
         <Version>2.6.0.0</Version>
-		<FileVersion>2025.9.1.1</FileVersion>
+		<FileVersion>2025.9.3.1</FileVersion>
         <UseAppHost>true</UseAppHost>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
         <ImplicitUsings>true</ImplicitUsings>
-        <ApplicationIcon>Assets/omegamaggotprime.ico</ApplicationIcon>
+        <ApplicationIcon>Assets/omegamaggotprime.ico</ApplicationIcon>   
     </PropertyGroup>
     
     <ItemGroup>
