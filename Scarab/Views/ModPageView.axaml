@@ -135,7 +135,7 @@
                         VerticalAlignment="Stretch">
                     <StackPanel Orientation="Horizontal" Spacing="5">
                         <i:Icon Value="fa-regular fa-folder-open" />
-                        <TextBlock Text="Open Mods" />
+                        <TextBlock Text="打开MOD目录" />
                     </StackPanel>
                 </Button>
 
@@ -149,7 +149,7 @@
                         VerticalAlignment="Stretch">
                     <StackPanel Orientation="Horizontal" Spacing="5">
                         <i:Icon Value="fa-solid fa-rotate" />
-                        <TextBlock Text="Update All" />
+                        <TextBlock Text="全部更新" />
                     </StackPanel>
                 </Button>
             </Grid>

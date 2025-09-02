@@ -8,7 +8,7 @@
         x:DataType="s:MainWindowViewModel"
         mc:Ignorable="d"
         Icon="/Assets/omegamaggotprime.ico"
-        Title="Scarab">
+        Title="空洞骑士MOD管理器">
     <Design.DataContext>
         <s:MainWindowViewModel />
     </Design.DataContext>
@@ -17,9 +17,9 @@
             <ProgressBar Theme="{DynamicResource ProgressRing}" Width="100" Height="100" IsIndeterminate="True" />
         </TabItem>
 
-        <TabItem x:Name="SettingsTab" Header="Settings" Content="{Binding SettingsPage, TargetNullValue=''}" />
+        <TabItem x:Name="SettingsTab" Header="设置" Content="{Binding SettingsPage, TargetNullValue=''}" />
 
-        <TabItem Header="About">
+        <TabItem Header="关于">
             <s:AboutViewModel />
         </TabItem>
     </TabControl>

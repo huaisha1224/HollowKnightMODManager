@@ -76,7 +76,7 @@ internal class Program
     private static void WriteExceptionToLog(Exception e)
     {
         if (Debugger.IsAttached)
-            Debugger.Break();
+         Debugger.Break();
 
         Log.Logger.Fatal(e, "Fatal error!");
     }

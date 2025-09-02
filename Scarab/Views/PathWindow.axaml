@@ -8,7 +8,7 @@
         xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Scarab.Views.PathWindow"
-        Title="PathWindow"
+        Title="设置游戏路径"
         d:DataContext="{x:Static mock:MockPathViewModel.DesignInstance}"
         x:DataType="vm:PathViewModel">
     <Grid RowDefinitions="Auto,Auto,*,Auto" ColumnDefinitions="*,Auto" Margin="25">
@@ -17,8 +17,8 @@
             Margin="0 4 0 4"
             Foreground="{DynamicResource ButtonDefaultPrimaryForeground}"
             FontWeight="DemiBold">
-            Unable to verify path!
-        </TextBlock>
+			无法验证游戏路径!
+		</TextBlock>
 
         <!-- In the case we have no content for an expander -->
         <TextBlock
@@ -89,7 +89,7 @@
             <TextBlock
                 Foreground="{DynamicResource DataValidationErrorsForeground}"
                 Margin="5 4 0 0"
-                Text="Select a valid path!" />
+                Text="请选中游戏安装路径下的hollow_knight.exe来完成路径设置" />
         </StackPanel>
     </Grid>
 </Window>

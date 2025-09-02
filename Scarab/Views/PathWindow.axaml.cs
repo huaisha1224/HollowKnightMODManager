@@ -32,7 +32,7 @@ public partial class PathWindow : ReactiveWindow<PathViewModel>
                     VerificationBlock.IsVisible = false;
 
                     VerificationExpander.IsVisible = true;
-                    VerificationExpander.Header = "Assembly not found!";
+                    VerificationExpander.Header = "找不到!";
 
                     var files = e.MissingFiles.Select(x => (x, success: false))
                                  .Prepend((e.Root, success: true));
@@ -47,7 +47,7 @@ public partial class PathWindow : ReactiveWindow<PathViewModel>
                     VerificationExpander.IsVisible = false;
 
                     VerificationBlock.IsVisible = true;
-                    VerificationBlock.Text = "No path selected!";
+                    VerificationBlock.Text = "你还未选择路径，请选择游戏安装路径下的hollow_knight.exe来完成路径设置";
                     break;
                 }
 
@@ -56,7 +56,7 @@ public partial class PathWindow : ReactiveWindow<PathViewModel>
                     VerificationBlock.IsVisible = false;
                     
                     VerificationExpander.IsVisible = true;
-                    VerificationExpander.Header = "Couldn't find Managed folder!";
+                    VerificationExpander.Header = "找不到托管文件夹！";
 
                     ShowFiles(se.AttemptedSuffixes.Select(x => (x, success: false)));
 

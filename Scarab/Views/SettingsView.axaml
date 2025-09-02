@@ -18,7 +18,7 @@
             </Style>
         </StackPanel.Styles>
         <TextBlock FontWeight="Bold" FontSize="20" Margin="15 15 15 0">
-            Settings
+            设置
         </TextBlock>
 
         <Grid ColumnDefinitions="Auto,Auto,*" RowDefinitions="*,*,*,*" Margin="20">
@@ -30,7 +30,7 @@
             </Grid.Styles>
 
             <TextBlock Margin="0 0 10 0" FontWeight="Bold" Grid.Column="0" Grid.Row="0">
-                Current install path:
+                游戏安装路径:
             </TextBlock>
 
             <Button
@@ -56,7 +56,7 @@
             </Button>
 
             <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold">
-                Language:
+                设置语言:
             </TextBlock>
 
             <ComboBox
@@ -69,11 +69,11 @@
                 ItemsSource="{Binding Languages}"
                 PlaceholderText="Locale" />
             <CheckBox Grid.Column="1" Grid.Row="2">
-                Automatically remove dependencies when uninstalling mods
-            </CheckBox>
+				卸载MOD时自动删除依赖MOD
+			</CheckBox>
             
             <TextBlock Grid.Column="0" Grid.Row="3" FontWeight="Bold">
-                Theme:
+                主题:
             </TextBlock>
             
             <ComboBox 

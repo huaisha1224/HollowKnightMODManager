@@ -14,26 +14,26 @@
         <Image Grid.Column="0" Grid.RowSpan="3" Source="avares://Scarab/Assets/omegamaggotprime.ico"
                Margin="20 10 0 10" />
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="20 0 0 0" Spacing="10" VerticalAlignment="Center">
-            <TextBlock FontWeight="Bold" FontSize="70">
-                Scarab
+            <TextBlock FontWeight="Bold" FontSize="50">
+            骑士MOD管理器
             </TextBlock>
             <TextBlock Text="{Binding Version}" FontSize="20" />
             <TextBlock Text="{x:Static viewModels:AboutViewModel.OSString}" FontSize="15" />
             <TextBlock>
-                Created by 56 et al.
+               怀沙2049
             </TextBlock>
             <Separator Margin="0 5 0 5" />
             <StackPanel Orientation="Horizontal" Spacing="10">
                 <Button DockPanel.Dock="Left" HorizontalAlignment="Left" Command="{Binding Donate}">
                     <StackPanel Orientation="Horizontal" Spacing="5">
                         <i:Icon Value="fa-solid fa-hand-holding-dollar" />
-                        <TextBlock Text="Donate" />
+                        <TextBlock Text="使用教程" />
                     </StackPanel>
                 </Button>
                 <Button DockPanel.Dock="Right" HorizontalAlignment="Left" Command="{Binding OpenLogs}">
                     <StackPanel Orientation="Horizontal" Spacing="5">
                         <i:Icon Value="fa-solid fa-book" />
-                        <TextBlock Text="Open Logs Folder" />
+                        <TextBlock Text="查看日志" />
                     </StackPanel>
                 </Button>
             </StackPanel>
