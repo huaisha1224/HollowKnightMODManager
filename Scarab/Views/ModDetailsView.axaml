@@ -1,0 +1,178 @@
+<UserControl x:Class="Scarab.Views.ModDetailsView"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mock="clr-namespace:Scarab.Mock;assembly=Scarab"
+             xmlns:ext="clr-namespace:Scarab.Extensions"
+             xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+             xmlns:conv="clr-namespace:Scarab.Converters"
+             xmlns:viewModels="clr-namespace:Scarab.ViewModels"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:mdxaml="https://github.com/whistyun/Markdown.Avalonia"
+             xmlns:ctxt="clr-namespace:ColorTextBlock.Avalonia;assembly=ColorTextBlock.Avalonia"
+             xmlns:models="clr-namespace:Scarab.Models"
+             mc:Ignorable="d"
+             d:DesignWidth="480"
+             d:DesignHeight="550"
+             d:DataContext="{x:Static mock:MockModPageViewModel.DesignInstance}"
+             x:DataType="viewModels:ModPageViewModel">
+    <Border
+        IsVisible="{Binding ., Converter={x:Static ObjectConverters.IsNotNull}, FallbackValue=False}"
+        DataContext="{Binding SelectedModItem}">
+        <Grid
+            Name="DetailsPanel"
+            Margin="10 0"
+            RowDefinitions="Auto,Auto,Auto"
+            ColumnDefinitions="*,Auto"
+            x:DataType="models:ModItem">
+            
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="{Binding Name}"
+                FontSize="24"
+                FontWeight="Black"
+                Margin="0 15 0 5"
+                TextTrimming="CharacterEllipsis" />
+            
+            <!-- Version -->
+            <StackPanel Grid.Column="0" Margin="0 0 0 8" Grid.Row="1">
+                <StackPanel.Styles>
+                    <Style Selector="TextBlock">
+                        <Setter Property="FontWeight" Value="Bold" />
+                        <Setter Property="FontSize" Value="16" />
+                    </Style>
+                </StackPanel.Styles>
+
+                <StackPanel x:Name="VersionBlock" Orientation="Horizontal">
+                    <StackPanel.Resources>
+                        <SolidColorBrush x:Key="Highlight" Color="#f49107" />
+                    </StackPanel.Resources>
+                    <StackPanel.Styles>
+                        <Style Selector="TextBlock.Update">
+                            <Setter Property="Foreground" Value="{DynamicResource Highlight}" />
+                            <Setter Property="Margin" Value="4 0 0 0" />
+                        </Style>
+                    </StackPanel.Styles>
+
+                    <TextBlock Text="{Binding VersionText}" />
+                    <TextBlock Classes="Update" IsVisible="{Binding UpdateAvailable}">
+                        <Run Text=" -> " />
+                        <Run Text="{Binding Version}" />
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>
+            
+            <!-- Repository Button -->
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="0 12 0 5"
+                FontSize="14"
+                Command="{Binding OpenRepository}"
+                Background="Transparent">
+                <Button.Styles>
+                    <Style Selector="StackPanel:pointerover TextBlock">
+                        <Setter Property="FontWeight" Value="ExtraBold" />
+                    </Style>
+                    <Style Selector="StackPanel:pointerover i|Icon">
+                        <Setter Property="FontSize" Value="15" />
+                    </Style>
+                </Button.Styles>
+                <Border BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>Repository</TextBlock>
+                    <i:Icon
+                        Margin="5 0 0 0"
+                        Value="fa-solid fa-arrow-up-right-from-square" />
+                </StackPanel>
+                    </Border>
+            </Button>
+            
+            <TabControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                <TabControl.Styles>
+                    <Style Selector="TabControl /template/ Panel">
+                        <Setter Property="Margin" Value="0 0 0 10" />
+                    </Style>
+
+                    <Style Selector="ItemsControl.Bulleted">
+                        <Setter Property="ItemTemplate">
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <i:Icon FontSize="6" Value="fa-solid fa-circle" VerticalAlignment="Center" />
+                                    <TextBlock Margin="4 0 0 0" Text="{Binding ., DataType={x:Type system:String}}"
+                                               VerticalAlignment="Center" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </Setter>
+                    </Style>
+                </TabControl.Styles>
+
+                <TabItem Header="Description">
+                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="0 0 0 15" />
+                </TabItem>
+
+                <TabItem Header="{ext:Localize XAML_Dependencies}" IsVisible="{Binding !!Dependencies.Length}">
+                    <ItemsControl Classes="Bulleted" ItemsSource="{Binding Dependencies}" />
+                </TabItem>
+
+                <TabItem
+                    Header="{ext:Localize XAML_Tags}"
+                    IsVisible="{Binding Tags, Converter={x:Static conv:TagConverters.NonZero}}">
+                    <ItemsControl Classes="Bulleted"
+                                  ItemsSource="{Binding Tags, Converter={x:Static conv:TagConverters.AsStrings}}" />
+                </TabItem>
+
+                <TabItem
+                    IsVisible="{Binding !!Integrations.Length}"
+                    Header="{ext:Localize XAML_Integrations}">
+                    <ItemsControl Classes="Bulleted" ItemsSource="{Binding Integrations}" />
+                </TabItem>
+
+                <TabItem
+                    IsVisible="{Binding !!Authors.Length}"
+                    Header="Authors">
+                    <ItemsControl Classes="Bulleted" ItemsSource="{Binding Authors}" />
+                </TabItem>
+
+                <TabItem Header="README" Name="ReadmeTab">
+                    <mdxaml:MarkdownScrollViewer
+                        Name="MdReadme"
+                        Height="{Binding #DetailsPanel.Bounds.Height}">
+                        <mdxaml:MarkdownScrollViewer.Styles>
+                            <Style Selector="ctxt|CTextBlock">
+                                <Setter Property="FontFamily" Value="{StaticResource InterFont}" />
+                                <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundColor}" />
+                            </Style>
+
+                            <Style Selector="ctxt|CTextBlock.Heading1">
+                                <Setter Property="FontSize" Value="22" />
+                                <Setter Property="FontWeight" Value="DemiBold" />
+                                <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundColor}" />
+                            </Style>
+
+                            <Style Selector="ctxt|CTextBlock.Heading2">
+                                <Setter Property="FontSize" Value="18" />
+                                <Setter Property="FontWeight" Value="SemiBold" />
+                                <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundColor}" />
+                            </Style>
+
+                            <Style Selector="ctxt|CTextBlock.Heading3">
+                                <Setter Property="FontSize" Value="16" />
+                                <Setter Property="FontWeight" Value="SemiBold" />
+                                <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundColor}" />
+                            </Style>
+
+                            <Style Selector="ctxt|CTextBlock.Heading4">
+                                <Setter Property="FontSize" Value="14" />
+                                <Setter Property="FontWeight" Value="SemiBold" />
+                                <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundColor}" />
+                            </Style>
+                        </mdxaml:MarkdownScrollViewer.Styles>
+                    </mdxaml:MarkdownScrollViewer>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Border>
+</UserControl>

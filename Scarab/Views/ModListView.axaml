@@ -1,0 +1,36 @@
+<UserControl x:Class="Scarab.Views.ModListView"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:Scarab.Models"
+             xmlns:viewModels="clr-namespace:Scarab.ViewModels"
+             xmlns:views="clr-namespace:Scarab.Views"
+             xmlns:mock="clr-namespace:Scarab.Mock;assembly=Scarab"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="550"
+             x:DataType="viewModels:ModPageViewModel"
+             d:DataContext="{x:Static mock:MockModPageViewModel.DesignInstance}"
+             Name="UserControl">
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+        <ListBox SelectedItem="{Binding SelectedModItem}"
+                 ItemsSource="{Binding FilteredItems}"
+                 Margin="15 0">
+            <ListBox.Styles>
+                <!-- Change the selected color to a grey instead of blue -->
+                <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+                    <Setter Property="Background" Value="{DynamicResource ThemeBorderLowBrush}" />
+                </Style>
+                <Style Selector="ListBoxItem">
+                    <Setter Property="Padding" Value="0" />
+                    <Setter Property="Margin" Value="0 1" />
+                </Style>
+            </ListBox.Styles>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate DataType="models:ModItem">
+                    <views:ModListItem />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ListBox>
+    </ScrollViewer>
+</UserControl>

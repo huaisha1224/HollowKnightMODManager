@@ -1,0 +1,92 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <!-- Windowed exe, avoids Console showing for users. -->
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>10</LangVersion>
+        <Nullable>enable</Nullable>
+        <Version>2.6.0.0</Version>
+        <UseAppHost>true</UseAppHost>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <ImplicitUsings>true</ImplicitUsings>
+        <ApplicationIcon>Assets/omegamaggotprime.ico</ApplicationIcon>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Compile Update="**\*.xaml.cs">
+            <DependentUpon>%(Filename)</DependentUpon>
+        </Compile>
+        <AvaloniaResource Include="**\*.xaml">
+            <SubType>Designer</SubType>
+        </AvaloniaResource>
+        <AvaloniaResource Include="Assets\**" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <AdditionalFiles Include="**\*.xaml" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.0.0" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.0" />
+        <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.0" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0" />
+        <PackageReference Include="Avalonia.Svg" Version="11.0.0.1" />
+        <PackageReference Include="Avalonia.Svg.Skia" Version="11.0.0.1" />
+        <PackageReference Include="DryIoc.dll" Version="5.4.1" />
+        <PackageReference Include="DryIoc.Microsoft.DependencyInjection" Version="6.2.0" />
+        <PackageReference Include="FakeItEasy" Version="8.0.0-alpha.1.10" />
+        <PackageReference Include="JetBrains.Annotations" Version="2023.2.0" />
+        <PackageReference Include="Markdown.Avalonia" Version="11.0.2" />
+        <PackageReference Include="MessageBox.Avalonia" Version="2.3.1-rc1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Toolkit.HighPerformance" Version="7.1.2" />
+        <PackageReference Include="Projektanker.Icons.Avalonia" Version="6.6.0-rc1.1" />
+        <PackageReference Include="Projektanker.Icons.Avalonia.FontAwesome" Version="6.6.0-rc1.1" />
+        <PackageReference Include="PropertyChanged.SourceGenerator" Version="1.0.8">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Semi.Avalonia" Version="11.0.0" />
+        <PackageReference Include="Serilog" Version="3.0.1" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+        <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+        <PackageReference Include="SerilogAnalyzer" Version="0.15.0" />
+        <PackageReference Include="Splat.Microsoft.Extensions.DependencyInjection" Version="14.6.37" />
+        <PackageReference Include="Splat.Serilog" Version="14.7.1" />
+        <PackageReference Include="System.IO.Abstractions" Version="19.2.29" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Compile Update="resources.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <EmbeddedResource Update="Resources.pt-BR.resx">
+        <Generator></Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources.zh.resx">
+        <Generator></Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources.fr.resx">
+        <Generator></Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Controls\" />
+    </ItemGroup>
+</Project>
