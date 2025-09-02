@@ -22,4 +22,4 @@
 
 
 ## 贡献
-- [https://github.com/fifty-six/Scarab](Scarab")
+- [Scarab](https://github.com/fifty-six/Scarab)
