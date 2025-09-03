@@ -1,0 +1,89 @@
+<reactiveUi:ReactiveUserControl x:TypeArguments="viewModels:SettingsViewModel" xmlns="https://github.com/avaloniaui"
+                                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                xmlns:viewModels="clr-namespace:Scarab.ViewModels"
+                                xmlns:mock="clr-namespace:Scarab.Mock"
+                                xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+                                xmlns:reactiveUi="http://reactiveui.net"
+                                xmlns:conv="clr-namespace:Scarab.Converters"
+                                mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                                x:Class="Scarab.Views.SettingsView"
+                                x:DataType="viewModels:SettingsViewModel"
+                                d:DataContext="{x:Static mock:MockModPageViewModel.SettingsInstance}">
+    <StackPanel Margin="8">
+        <StackPanel.Styles>
+            <Style Selector="CheckBox">
+                <Setter Property="CornerRadius" Value="4" />
+            </Style>
+        </StackPanel.Styles>
+        <TextBlock FontWeight="Bold" FontSize="20" Margin="15 15 15 0">
+            设置
+        </TextBlock>
+
+        <Grid ColumnDefinitions="Auto,Auto,*" RowDefinitions="*,*,*,*" Margin="20">
+            <Grid.Styles>
+                <Style Selector=":is(Control)">
+                    <Setter Property="Margin" Value="0 3 0 3" />
+                    <Setter Property="VerticalAlignment" Value="Center" />
+                </Style>
+            </Grid.Styles>
+
+            <TextBlock Margin="0 0 10 0" FontWeight="Bold" Grid.Column="0" Grid.Row="0">
+                游戏安装路径:
+            </TextBlock>
+
+            <Button
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Grid.Row="0"
+                HorizontalContentAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center"
+                Command="{Binding ChangePath}">
+                <DockPanel>
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        DockPanel.Dock="Left"
+                        FontWeight="SemiBold"
+                        Text="{Binding Settings, Converter={x:Static conv:ISettingsConverters.ToBasePath}}"
+                        Background="{DynamicResource ButtonBackground}" />
+                    <i:Icon
+                        HorizontalAlignment="Right"
+                        DockPanel.Dock="Right"
+                        Value="fa-regular fa-folder-open" />
+                </DockPanel>
+            </Button>
+
+            <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold">
+                设置语言:
+            </TextBlock>
+
+            <ComboBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Stretch"
+                Margin="0 0 0 0"
+                SelectedItem="{Binding Selected}"
+                ItemsSource="{Binding Languages}"
+                PlaceholderText="Locale" />
+            <CheckBox Grid.Column="1" Grid.Row="2">
+				卸载MOD时自动删除依赖MOD
+			</CheckBox>
+            
+            <TextBlock Grid.Column="0" Grid.Row="3" FontWeight="Bold">
+                主题:
+            </TextBlock>
+            
+            <ComboBox 
+                Grid.Column="1" 
+                Grid.Row="3" 
+                HorizontalAlignment="Stretch" 
+                Grid.ColumnSpan="2"
+                SelectedItem="{Binding Theme}"
+                ItemsSource="{Binding Themes}"
+            />
+        </Grid>
+    </StackPanel>
+</reactiveUi:ReactiveUserControl>
