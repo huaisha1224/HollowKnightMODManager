@@ -15,7 +15,8 @@ public sealed partial record ModItem : INotifyPropertyChanged
         string repository,
         ImmutableArray<Tag> tags,
         string[] integrations,
-        string[] authors
+        string[] authors,
+        string displayName // 新增参数
     )
     {
         _state = state;
@@ -30,6 +31,7 @@ public sealed partial record ModItem : INotifyPropertyChanged
         Tags = tags.Aggregate((Tag) 0, (acc, x) => acc | x);
         Integrations = integrations;
         Authors = authors;
+        DisplayName = displayName;
     }
 
     // Install details
@@ -47,6 +49,7 @@ public sealed partial record ModItem : INotifyPropertyChanged
     public string Repository { get; }
     public string[] Integrations { get; }
     public string[] Authors { get; }
+    public string DisplayName { get; }
 
     [Notify] 
     private ModState _state;

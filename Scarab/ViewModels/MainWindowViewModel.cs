@@ -1,17 +1,19 @@
 using System.Diagnostics;
 using System.IO.Abstractions;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Reflection;
 using System.Text.Json;
-using System.Net.Http.Headers;
+using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Logging;
-using DryIoc;
 using MessageBox.Avalonia;
 using MessageBox.Avalonia.BaseWindows.Base;
 using MessageBox.Avalonia.DTO;
 using MessageBox.Avalonia.Enums;
 using MessageBox.Avalonia.Models;
 using Microsoft.Extensions.DependencyInjection;
+using DryIoc; // 在文件顶部添加这一行
 
 namespace Scarab.ViewModels;
 
@@ -40,6 +42,7 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
 
     private async Task Impl()
     {
+        await CheckForUpdateAsync(); // 检查更新
         Log.Information("Checking if up to date...");
             
         await CheckUpToDate();
@@ -124,9 +127,10 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
             settings,
             content.ml
         );
-
+        var chineseNames = await ModDatabase.FetchChineseNamesAsync(hc);
         con.RegisterInstance<IModSource>(mods);
-        con.RegisterDelegate<IModSource, IModDatabase>(src => new ModDatabase(src, content));
+
+        con.RegisterDelegate<IModSource, IModDatabase>(src => new ModDatabase(src, content.ml, content.al, chineseNames));
         con.Register<IInstaller, Installer>();
         con.Register<ModPageViewModel>();
         con.Register<SettingsViewModel>();
@@ -311,6 +315,49 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
             Environment.Exit(-1);
 
             throw;
+        }
+    }
+
+    // 判断是否需要更新
+    private async Task CheckForUpdateAsync()
+    {
+        try
+        {
+            using var hc = new HttpClient();
+            var resp = await hc.GetStringAsync("https://api.smarttesting.cn/tools/HKModManager");   //版本检查API
+            using var doc = JsonDocument.Parse(resp);
+            var root = doc.RootElement;
+            var remoteVersion = root.GetProperty("Version").GetString();
+            var downloadUrl = root.GetProperty("DownloadUrl").GetString();
+
+            var localVersion = Assembly.GetExecutingAssembly()
+                .GetCustomAttribute<AssemblyFileVersionAttribute>()?.Version;
+
+            if (!string.IsNullOrEmpty(remoteVersion) && !string.IsNullOrEmpty(localVersion)
+                && new Version(remoteVersion) > new Version(localVersion))
+            {
+                var result = await MessageBoxManager.GetMessageBoxCustomWindow(
+                    new MessageBoxCustomParams
+                    {
+                        ContentTitle = "发现新版本",
+                        ContentMessage = $"检测到新版本：{remoteVersion}\n点击确定前往下载",
+                        ButtonDefinitions = new[]
+                        {
+                            new ButtonDefinition { Name = "确定", IsDefault = true }
+                        },
+                        Icon = Icon.Info
+                    }).Show();
+
+                if (result == "确定" && !string.IsNullOrEmpty(downloadUrl))
+                {
+                    Process.Start(new ProcessStartInfo(downloadUrl) { UseShellExecute = true });
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // 可选：记录日志或忽略
+            System.Diagnostics.Debug.WriteLine("检查更新失败: " + ex);
         }
     }
 }

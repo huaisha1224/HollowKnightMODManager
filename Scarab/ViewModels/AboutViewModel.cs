@@ -30,7 +30,7 @@ public class AboutViewModel : ViewModelBase
 
     private static void _Donate() 
     {
-        Process.Start(new ProcessStartInfo("https://paypal.me/ybham") { UseShellExecute = true });
+        Process.Start(new ProcessStartInfo("https://space.bilibili.com/37443749") { UseShellExecute = true });
     }
 
     private static void _OpenLogs()

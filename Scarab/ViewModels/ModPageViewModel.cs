@@ -126,10 +126,13 @@ public partial class ModPageViewModel : ViewModelBase
         OnUninstall = ReactiveCommand.CreateFromTask<ModItem>(OnUninstallAsync);
         OnEnable = ReactiveCommand.CreateFromTask<ModItem>(OnEnableAsync);
         
+        // 新增支持中文搜索
         this.WhenAnyValue(x => x.Search)
             .Subscribe(
                 s => SearchFilter = m =>
-                    string.IsNullOrEmpty(s) || m.Name.Contains(s, StringComparison.OrdinalIgnoreCase)
+                    string.IsNullOrEmpty(s)
+                    || (m.Name?.Contains(s, StringComparison.OrdinalIgnoreCase) ?? false)
+                    || (m.DisplayName?.Contains(s, StringComparison.OrdinalIgnoreCase) ?? false)
             );
 
         this.WhenAnyValue(x => x.SelectedTag).Subscribe(t => { TagFilter = m => m.Tags.HasFlag(t); });
