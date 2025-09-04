@@ -17,7 +17,14 @@
             <TextBlock FontWeight="Bold" FontSize="50">
             骑士MOD管理器
             </TextBlock>
-            <TextBlock Text="{Binding Version}" FontSize="20" />
+            <TextBlock FontSize="20">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}{0}({1})">
+                        <Binding Path="Version" />
+                        <Binding Path="FileVersion" />
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
             <TextBlock Text="{x:Static viewModels:AboutViewModel.OSString}" FontSize="15" />
             <TextBlock>
 			本工具由怀沙2049从Scarab汉化而来
