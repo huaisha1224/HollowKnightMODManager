@@ -88,6 +88,9 @@ public partial class ModPageViewModel : ViewModelBase
     public bool ApiOutOfDate => _mods.ApiInstall is InstalledState { Version: var v } && v.Major < _db.Api.Version;
     public bool CanUpdateAll => _items.Any(x => x.State is InstalledState { Updated: false }) && !_updating;
     public ReadOnlyObservableCollection<ModItem> FilteredItems => _filteredItems;
+    
+    // MODæ€»æ•°å±žæ€§
+    public int TotalModsCount => _items.Count;
 
     public ModPageViewModel(ISettings settings, IModDatabase db, IInstaller inst, IModSource mods, ILogger logger, HttpClient hc)
     {
@@ -126,7 +129,7 @@ public partial class ModPageViewModel : ViewModelBase
         OnUninstall = ReactiveCommand.CreateFromTask<ModItem>(OnUninstallAsync);
         OnEnable = ReactiveCommand.CreateFromTask<ModItem>(OnEnableAsync);
         
-        // ÐÂÔöÖ§³ÖÖÐÎÄËÑË÷
+        // Ö§
         this.WhenAnyValue(x => x.Search)
             .Subscribe(
                 s => SearchFilter = m =>

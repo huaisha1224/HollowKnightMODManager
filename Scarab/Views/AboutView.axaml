@@ -26,10 +26,16 @@
             <StackPanel Orientation="Horizontal" Spacing="10">
                 <Button DockPanel.Dock="Left" HorizontalAlignment="Left" Command="{Binding Donate}">
                     <StackPanel Orientation="Horizontal" Spacing="5">
-                        <i:Icon Value="fa-solid fa-hand-holding-dollar" />
+                        <i:Icon Value="fa-brands fa-youtube" />
                         <TextBlock Text="使用教程" />
                     </StackPanel>
                 </Button>
+				<Button DockPanel.Dock="Left" HorizontalAlignment="Left" Command="{Binding Download}">
+					<StackPanel Orientation="Horizontal" Spacing="5">
+						<i:Icon Value="fa-solid fa-download" />
+						<TextBlock Text="下载新版本" />
+					</StackPanel>
+				</Button>
                 <Button DockPanel.Dock="Right" HorizontalAlignment="Left" Command="{Binding OpenLogs}">
                     <StackPanel Orientation="Horizontal" Spacing="5">
                         <i:Icon Value="fa-solid fa-book" />

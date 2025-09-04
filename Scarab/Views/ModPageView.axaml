@@ -58,6 +58,15 @@
                             Text="{Binding Search}" />
                     </DockPanel>
                 </Border>
+                
+                <!-- 显示MOD总数 -->
+                <TextBlock Grid.Row="0" 
+                          Grid.Column="1" 
+                          VerticalAlignment="Center" 
+                          HorizontalAlignment="Right"
+                          Text="{Binding TotalModsCount, StringFormat='MOD数量: {0}'}"
+                          Margin="0,0,10,0" />
+                          
                 <Grid Grid.Column="0"
                       Grid.Row="2"
                       ColumnDefinitions="auto, *">
