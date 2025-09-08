@@ -5,8 +5,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <LangVersion>10</LangVersion>
         <Nullable>enable</Nullable>
-        <Version>3.0.0.2</Version>
-		    <FileVersion>2025.9.5.1</FileVersion>
+        <Version>3.0.0.3</Version>
+		    <FileVersion>2025.9.8.1</FileVersion>
         <UseAppHost>true</UseAppHost>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>

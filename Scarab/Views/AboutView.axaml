@@ -56,6 +56,12 @@
 						<TextBlock Text="源代码" />
 					</StackPanel>
 				</Button>
+                <Button DockPanel.Dock="Right" HorizontalAlignment="Left" Command="{Binding OpenSilkSongInstaller}">
+                    <StackPanel Orientation="Horizontal" Spacing="5">
+                        <i:Icon Value="fa-solid fa-download" />
+                        <TextBlock Text="丝之歌MOD安装器" />
+                    </StackPanel>
+                </Button>
             </StackPanel>
         </StackPanel>
     </Grid>

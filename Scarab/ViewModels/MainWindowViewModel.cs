@@ -13,7 +13,7 @@ using MessageBox.Avalonia.DTO;
 using MessageBox.Avalonia.Enums;
 using MessageBox.Avalonia.Models;
 using Microsoft.Extensions.DependencyInjection;
-using DryIoc; // ÔÚÎÄ¼ş¶¥²¿Ìí¼ÓÕâÒ»ĞĞ
+using DryIoc; // è¿™ä¸ªæ–‡ä»¶éœ€è¦å¼•ç”¨
 
 namespace Scarab.ViewModels;
 
@@ -42,7 +42,7 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
 
     private async Task Impl()
     {
-        await CheckForUpdateAsync(); // ¼ì²é¸üĞÂ
+        await CheckForUpdateAsync(); // ç‰ˆæœ¬æ£€æŸ¥
         Log.Information("Checking if up to date...");
             
         await CheckUpToDate();
@@ -318,13 +318,13 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
         }
     }
 
-    // ÅĞ¶ÏÊÇ·ñĞèÒª¸üĞÂ
+    // åˆ¤æ–­æ˜¯å¦éœ€è¦æ›´æ–°
     private async Task CheckForUpdateAsync()
     {
         try
         {
             using var hc = new HttpClient();
-            var resp = await hc.GetStringAsync("https://api.smarttesting.cn/tools/HKModManager");   //°æ±¾¼ì²éAPI
+            var resp = await hc.GetStringAsync("https://api.smarttesting.cn/tools/HKModManager");   //ç‰ˆæœ¬æ£€æµ‹API
             using var doc = JsonDocument.Parse(resp);
             var root = doc.RootElement;
             var remoteVersion = root.GetProperty("Version").GetString();
@@ -339,16 +339,16 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
                 var result = await MessageBoxManager.GetMessageBoxCustomWindow(
                     new MessageBoxCustomParams
                     {
-                        ContentTitle = "·¢ÏÖĞÂ°æ±¾",
-                        ContentMessage = $"¼ì²âµ½ĞÂ°æ±¾£º{remoteVersion}\nµã»÷È·¶¨Ç°ÍùÏÂÔØ",
+                        ContentTitle = "å‘ç°æ–°ç‰ˆæœ¬",
+                        ContentMessage = $"æ£€æµ‹åˆ°æ–°ç‰ˆæœ¬ï¼š{remoteVersion}\nè¯·ç¡®è®¤å‰å»æ›´æ–°",
                         ButtonDefinitions = new[]
                         {
-                            new ButtonDefinition { Name = "È·¶¨", IsDefault = true }
+                            new ButtonDefinition { Name = "ç¡®è®¤", IsDefault = true }
                         },
                         Icon = Icon.Info
                     }).Show();
 
-                if (result == "È·¶¨" && !string.IsNullOrEmpty(downloadUrl))
+                if (result == "ç¡®è®¤" && !string.IsNullOrEmpty(downloadUrl))
                 {
                     Process.Start(new ProcessStartInfo(downloadUrl) { UseShellExecute = true });
                 }
@@ -356,8 +356,8 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
         }
         catch (Exception ex)
         {
-            // ¿ÉÑ¡£º¼ÇÂ¼ÈÕÖ¾»òºöÂÔ
-            System.Diagnostics.Debug.WriteLine("¼ì²é¸üĞÂÊ§°Ü: " + ex);
+            // å¯é€‰çš„è®°å½•æ—¥å¿—å¤„ç†
+            System.Diagnostics.Debug.WriteLine("æ£€æŸ¥æ›´æ–°å¤±è´¥: " + ex);
         }
     }
 }

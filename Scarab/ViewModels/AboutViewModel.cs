@@ -11,6 +11,7 @@ public class AboutViewModel : ViewModelBase
     public ReactiveCommand<Unit, Unit> Download { get; set; } = ReactiveCommand.Create(_Download);
     public ReactiveCommand<Unit, Unit> OpenLogs { get; set; } = ReactiveCommand.Create(_OpenLogs);
     public ReactiveCommand<Unit, Unit> OpenSource { get; set; } = ReactiveCommand.Create(_OpenSource);
+    public ReactiveCommand<Unit, Unit> OpenSilkSongInstaller { get; set; } = ReactiveCommand.Create(_OpenSilkSongInstaller);
 
     public string Version { get; } = GetVersion();
     public string FileVersion { get; } = GetFileVersion();
@@ -63,5 +64,10 @@ public class AboutViewModel : ViewModelBase
     private static void _OpenSource()
     {
         Process.Start(new ProcessStartInfo("https://github.com/huaisha1224/HollowKnightMODManager") { UseShellExecute = true });
+    }
+    
+    private static void _OpenSilkSongInstaller()
+    {
+        Process.Start(new ProcessStartInfo("https://www.kdocs.cn/l/crA4XCOGmYSF") { UseShellExecute = true });
     }
 }
