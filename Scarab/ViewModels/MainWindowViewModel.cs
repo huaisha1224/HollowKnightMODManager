@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Reflection;
 using System.Text.Json;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Logging;
@@ -310,6 +311,11 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
             Log.Fatal(e, "Fatal error in MainWindowViewModel startup!");
 
             // 显示错误信息给用户，让他们选择是否退出
+            // 获取主窗口用于居中显示
+            var mainWindow = Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop
+                ? desktop.MainWindow
+                : null;
+
             var result = await MessageBoxManager.GetMessageBoxCustomWindow(
                 new MessageBoxCustomParams
                 {
@@ -319,8 +325,9 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
                     {
                         new ButtonDefinition { Name = "确定", IsDefault = true }
                     },
-                    Icon = Icon.Error
-                }).Show();
+                    Icon = Icon.Error,
+                    WindowStartupLocation = WindowStartupLocation.CenterOwner // 关键：居中显示
+                }).Show(mainWindow); // 关键：传入主窗口
 
             if (result == "确定")
             {
@@ -339,7 +346,7 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
         try
         {
             using var hc = new HttpClient();
-            var resp = await hc.GetStringAsync("https://api.smarttesting.cn/tools/HKModManager");   //版本检测API
+            var resp = await hc.GetStringAsync("https://api.smarttesting.cn/tools/HKModManager");
             using var doc = JsonDocument.Parse(resp);
             var root = doc.RootElement;
             var remoteVersion = root.GetProperty("Version").GetString();
@@ -351,6 +358,11 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
             if (!string.IsNullOrEmpty(remoteVersion) && !string.IsNullOrEmpty(localVersion)
                 && new Version(remoteVersion) > new Version(localVersion))
             {
+                // 获取主窗口
+                var mainWindow = Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop
+                    ? desktop.MainWindow
+                    : null;
+
                 var result = await MessageBoxManager.GetMessageBoxCustomWindow(
                     new MessageBoxCustomParams
                     {
@@ -360,9 +372,9 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
                         {
                             new ButtonDefinition { Name = "确认", IsDefault = true }
                         },
-                        Icon = Icon.Info
-                    }).Show();
-
+                        Icon = Icon.Info,
+                        WindowStartupLocation = WindowStartupLocation.CenterOwner // 关键：居中显示
+                    }).Show(mainWindow); // 关键：传入主窗口
                 if (result == "确认" && !string.IsNullOrEmpty(downloadUrl))
                 {
                     Process.Start(new ProcessStartInfo(downloadUrl) { UseShellExecute = true });
@@ -371,7 +383,6 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
         }
         catch (Exception ex)
         {
-            // 可选的记录日志处理
             System.Diagnostics.Debug.WriteLine("检查更新失败: " + ex);
         }
     }

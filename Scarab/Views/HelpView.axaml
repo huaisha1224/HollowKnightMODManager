@@ -1,0 +1,33 @@
+<reactiveUi:ReactiveUserControl x:TypeArguments="viewModels:HelpViewModel" xmlns="https://github.com/avaloniaui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:mock="clr-namespace:Scarab.Mock"
+            xmlns:viewModels="clr-namespace:Scarab.ViewModels"
+            xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+            xmlns:reactiveUi="http://reactiveui.net"
+            mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+            x:DataType="viewModels:HelpViewModel"
+            x:Class="Scarab.Views.HelpView">
+    <Grid Margin="20" RowDefinitions="Auto,*">
+        <TextBlock Grid.Row="0" Text="使用帮助" FontSize="24" FontWeight="Bold" Margin="0 0 0 20"/>
+        
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Spacing="15">
+                <TextBlock Text="1. API安装" FontSize="20" FontWeight="Bold"/>
+                <TextBlock Text="• 首次使用需要安装API核心组件，安装失败请先加速GitHub" TextWrapping="Wrap"/>
+                
+                <TextBlock Text="2. 启用/禁用MOD" FontSize="20" FontWeight="Bold" Margin="0 10 0 0"/>
+                <TextBlock Text="• 安装后的MOD可以随时启用或禁用，需要重新启动游戏才能生效" TextWrapping="Wrap"/>
+                
+                <TextBlock Text="3. 更新MOD" FontSize="20" FontWeight="Bold" Margin="0 10 0 0"/>
+                <TextBlock Text="• 点击'更新'按钮可更新过时的MOD，建议定期检查并更新MOD以确保兼容性" TextWrapping="Wrap"/>
+                
+                <TextBlock Text="4. 注意事项" FontSize="20" FontWeight="Bold" Margin="0 10 0 0"/>
+                <TextBlock Text="• 由于原Scarab工具的API和MOD列表都是存放在GitHub上，所以使用此MOD安装器汉化版本，也必须全程加速GitHub" TextWrapping="Wrap"/>
+                <TextBlock Text="• 用魔法时需要开全局模式，也可以用我提供的加速器解决方案" TextWrapping="Wrap"/>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</reactiveUi:ReactiveUserControl>
