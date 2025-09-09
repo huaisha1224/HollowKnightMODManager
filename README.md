@@ -4,7 +4,7 @@
 
 这是Scarab 空洞骑士(Hollow Knight)模组管理器的中文版。
 
-![screenshot](https://i.imgur.com/kWyAqX7.png)
+![screenshot](https://github.com/huaisha1224/HollowKnightMODManager/blob/main/screenshot.png)
 
 ## 使用说明
 - 从下载链接（或从发布页面手动）下载最新版本。
@@ -19,6 +19,7 @@
 - 搜索官方模组链接中可用的 500+ 模组。
 - 汉化了modlinks上的所有MOD
 - 支持中文MOD名称的搜索
+- 后续新增的MOD会显示英文名称
 
 
 ## 贡献
