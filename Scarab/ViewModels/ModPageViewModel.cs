@@ -145,17 +145,34 @@ public partial class ModPageViewModel : ViewModelBase
     {
         _logger.LogInformation("Reinstalling API, {State}", _mods.ApiInstall);
         
-        await _installer.InstallApi(IInstaller.ReinstallPolicy.ForceReinstall);
+        try
+        {
+            await _installer.InstallApi(IInstaller.ReinstallPolicy.ForceReinstall);
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, "Error when reinstalling API!");
+            ExceptionRaised?.Invoke(ModAction.Update, e, null);
+        }
     }
 
     private async Task ToggleApiCommand()
     {
         _logger.LogInformation("Toggling API, current state: {State}", _mods.ApiInstall);
         
-        if (_mods.ApiInstall is not InstalledState)
-            await _installer.InstallApi();
-        else 
-            await _installer.ToggleApi();
+        try
+        {
+            if (_mods.ApiInstall is not InstalledState)
+                await _installer.InstallApi();
+            else 
+                await _installer.ToggleApi();
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, "Error when toggling API!");
+            ExceptionRaised?.Invoke(ModAction.Toggle, e, null);
+            return;
+        }
         
         RaisePropertyChanged(nameof(Api));
     }

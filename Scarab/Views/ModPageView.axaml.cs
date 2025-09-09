@@ -1,6 +1,12 @@
 using System.Diagnostics;
 using Avalonia.Controls.Notifications;
 using Avalonia.Input;
+using MessageBox.Avalonia;
+using MessageBox.Avalonia.DTO;
+using MessageBox.Avalonia.Enums;
+using Avalonia.Controls;
+using Avalonia;
+using MessageBox.Avalonia.Models;
 // Resources is a field in Avalonia UserControls, so alias it for brevity
 using Localization = Scarab.Resources;
 
@@ -28,7 +34,7 @@ public partial class ModPageView : ReactiveUserControl<ModPageViewModel>
         });
     }
 
-    private void OnError(ModPageViewModel.ModAction act, Exception e, ModItem? m)
+    private async void OnError(ModPageViewModel.ModAction act, Exception e, ModItem? m)
     {
         Trace.TraceError($"Failed action {act} for {m?.Name ?? "null item"}, ex: {e}");
 
@@ -36,11 +42,52 @@ public partial class ModPageView : ReactiveUserControl<ModPageViewModel>
         {
             case HttpRequestException:
             {
-                _notify?.Show(new Notification(
-                    $"Failed to {act} {m?.Name ?? string.Empty}!",
-                    string.Format(Localization.MLVM_DisplayNetworkError_Msgbox_Text, m?.Name ?? "the API"),
-                    NotificationType.Error
-                ));
+                // 获取主窗口以便居中显示消息框
+                Window? mainWindow = null;
+                try
+                {
+                    mainWindow = (Window?)Application.Current?.ApplicationLifetime switch
+                    {
+                        Avalonia.Controls.ApplicationLifetimes.IClassicDesktopStyleApplicationLifetime desktop => desktop.MainWindow,
+                        _ => null
+                    };
+                }
+                catch
+                {
+                    // 如果无法获取主窗口，就使用默认设置
+                }
+
+                // 显示错误信息给用户
+                var messageBox = MessageBoxManager.GetMessageBoxCustomWindow(
+                    new MessageBoxCustomParams
+                    {
+                        ContentTitle = "网络错误",
+                        ContentMessage = "在安装时发生网络错误，\n\n请先加速GitHub之后重新启动MOD安装器",
+                        ButtonDefinitions = new[]
+                        {
+                            new ButtonDefinition { Name = "确定", IsDefault = true }
+                        },
+                        Icon = Icon.Error,
+                        WindowStartupLocation = WindowStartupLocation.CenterOwner
+                    });
+                
+                // 如果获取到了主窗口，则在主窗口中央显示，否则使用默认位置
+                if (mainWindow != null)
+                {
+                    var result = await messageBox.Show(mainWindow); // 将主窗口作为所有者传入
+                    if (result == "确定")
+                    {
+                        Environment.Exit(-1);
+                    }
+                }
+                else
+                {
+                    var result = await messageBox.Show(); // 使用默认显示方式
+                    if (result == "确定")
+                    {
+                        Environment.Exit(-1);
+                    }
+                }
 
                 break;
             }
@@ -88,25 +135,26 @@ public partial class ModPageView : ReactiveUserControl<ModPageViewModel>
             _ => throw new ArgumentOutOfRangeException(nameof(act), act, null)
         };
 
-        _notify?.Show(new Notification(
-            "Success!",
-            $"{act_s} {mod.Name}!",
-            NotificationType.Success
-        ));
-    }
-
-    protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
-    {
-        base.OnAttachedToVisualTree(e);
-
-        var tl = TopLevel.GetTopLevel(this);
-
-        _notify = new WindowNotificationManager(tl) { MaxItems = 3 };
+        _notify?.Show(new Notification(act_s, mod.Name, NotificationType.Information));
     }
 
     private void OnKeyDown(object? sender, KeyEventArgs e)
     {
-        if (!Search.IsFocused)
-            Search.Focus();
+        switch (e.Key)
+        {
+            case Key.F5:
+                ViewModel?.UpdateAll.Execute().Subscribe();
+                break;
+            case Key.Space:
+                if (ViewModel?.SelectedModItem is { } item)
+                {
+                    if (item.Installed)
+                        ViewModel.OnUninstall.Execute(item).Subscribe();
+                    else
+                        ViewModel.OnInstall.Execute(item).Subscribe();
+                }
+
+                break;
+        }
     }
 }

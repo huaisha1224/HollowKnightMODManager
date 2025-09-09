@@ -309,12 +309,27 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
         {
             Log.Fatal(e, "Fatal error in MainWindowViewModel startup!");
 
-            if (Debugger.IsAttached)
-                Debugger.Break();
+            // 显示错误信息给用户，让他们选择是否退出
+            var result = await MessageBoxManager.GetMessageBoxCustomWindow(
+                new MessageBoxCustomParams
+                {
+                    ContentTitle = "启动错误",
+                    ContentMessage = $"无法访问ModLink，\n\n请加速GitHub之后重新启动程序。",
+                    ButtonDefinitions = new[]
+                    {
+                        new ButtonDefinition { Name = "确定", IsDefault = true }
+                    },
+                    Icon = Icon.Error
+                }).Show();
 
-            Environment.Exit(-1);
+            if (result == "确定")
+            {
+                if (Debugger.IsAttached)
+                    Debugger.Break();
 
-            throw;
+                Environment.Exit(-1);
+            }
+            // 如果用户选择继续，则不执行任何操作，程序将继续运行
         }
     }
 
