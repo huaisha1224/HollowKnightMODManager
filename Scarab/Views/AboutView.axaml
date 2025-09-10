@@ -25,9 +25,9 @@
                     </MultiBinding>
                 </TextBlock.Text>
             </TextBlock>
-            <TextBlock Text="{x:Static viewModels:AboutViewModel.OSString}" FontSize="15" />
+            <TextBlock Text="原作者：fifty-six" FontSize="15" />
             <TextBlock>
-			本工具由怀沙2049从Scarab汉化而来
+			    本工具由“怀沙2049”从开源项目Scarab汉化而来
 			</TextBlock>
             <Separator Margin="0 5 0 5" />
             <StackPanel Orientation="Horizontal" Spacing="10">

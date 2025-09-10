@@ -24,10 +24,12 @@ public class ModDatabase : IModDatabase
 
     private readonly List<ModItem> _items = new();
     private readonly Dictionary<string, string> _chineseNames;
+    private readonly Dictionary<string, ModChineseInfo> _chineseInfos;
 
-    public ModDatabase(IModSource mods, ModLinks ml, ApiLinks al, Dictionary<string, string> chineseNames)
+    public ModDatabase(IModSource mods, ModLinks ml, ApiLinks al, Dictionary<string, string> chineseNames, Dictionary<string, ModChineseInfo> chineseInfos)
     {
         _chineseNames = chineseNames;
+        _chineseInfos = chineseInfos;
 
         foreach (var mod in ml.Manifests)
         {
@@ -36,8 +38,16 @@ public class ModDatabase : IModDatabase
                           .ToImmutableArray();
 
             var name = mod.Name;
-            // 
             var displayName = _chineseNames.TryGetValue(name, out var cn) ? cn : name;
+
+            // 合成描述
+            string description = mod.Description;
+            if (_chineseInfos.TryGetValue(name, out var info) && !string.IsNullOrWhiteSpace(info.Desc))
+            {
+                description = string.IsNullOrWhiteSpace(description)
+                    ? info.Desc
+                    : $"{description}\n\n{info.Desc}";
+            }
 
             var item = new ModItem
             (
@@ -45,13 +55,13 @@ public class ModDatabase : IModDatabase
                 version: mod.Version.Value,
                 name: name,
                 shasum: mod.Links.SHA256,
-                description: mod.Description,
+                description: description, // 直接传递合成后的描述
                 repository: mod.Repository,
                 dependencies: mod.Dependencies,
                 tags: tags,
                 integrations: mod.Integrations,
                 authors: mod.Authors,
-                displayName: displayName, //
+                displayName: displayName,
                 state: mods.FromManifest(mod)
             );
             _items.Add(item);
@@ -62,10 +72,10 @@ public class ModDatabase : IModDatabase
     }
 
     public ModDatabase(IModSource mods, (ModLinks ml, ApiLinks al) links) 
-        : this(mods, links.ml, links.al, new Dictionary<string, string>()) { }
+        : this(mods, links.ml, links.al, new Dictionary<string, string>(), new Dictionary<string, ModChineseInfo>()) { }
 
     public ModDatabase(IModSource mods, string modlinks, string apilinks) 
-        : this(mods, FromString<ModLinks>(modlinks), FromString<ApiLinks>(apilinks), new Dictionary<string, string>()) { }
+        : this(mods, FromString<ModLinks>(modlinks), FromString<ApiLinks>(apilinks), new Dictionary<string, string>(), new Dictionary<string, ModChineseInfo>()) { }
         
     public static async Task<(ModLinks, ApiLinks)> FetchContent(HttpClient hc)
     {
@@ -115,37 +125,59 @@ public class ModDatabase : IModDatabase
         }
     }
 
-    public static async Task<Dictionary<string, string>> FetchChineseNamesAsync(HttpClient hc)
+    public static async Task<Dictionary<string, ModChineseInfo>> FetchChineseNamesAsync(HttpClient hc)
     {
-        var url = "https://ppcdn.dxinzf.com/ppstatic/tool/HollowKnight/HKChineseName.json";
+        var url = "https://ppcdn.dxinzf.com/ppstatic/tool/HollowKnight/HKModChineseName.json";
         using var response = await hc.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
         response.EnsureSuccessStatusCode();
 
-        // 检查是否为gzip压缩
         var encoding = response.Content.Headers.ContentEncoding;
         Stream stream = await response.Content.ReadAsStreamAsync();
+        string json;
         if (encoding.Contains("gzip"))
         {
             using var gzip = new System.IO.Compression.GZipStream(stream, System.IO.Compression.CompressionMode.Decompress);
             using var reader = new StreamReader(gzip, System.Text.Encoding.UTF8);
-            var json = await reader.ReadToEndAsync();
-            //System.Diagnostics.Debug.WriteLine("[调试] 解压后JSON内容: " + json);
-            return JsonSerializer.Deserialize<Dictionary<string, string>>(json) ?? new();
+            json = await reader.ReadToEndAsync();
         }
         else
         {
             using var reader = new StreamReader(stream, System.Text.Encoding.UTF8);
-            var json = await reader.ReadToEndAsync();
-            //System.Diagnostics.Debug.WriteLine("[调试] 普通JSON内容: " + json);
-            return JsonSerializer.Deserialize<Dictionary<string, string>>(json) ?? new();
+            json = await reader.ReadToEndAsync();
         }
+
+        return JsonSerializer.Deserialize<Dictionary<string, ModChineseInfo>>(json) ?? new();
     }
 
     public static async Task<ModDatabase> CreateInstance(IModSource modSource)
     {
         using var hc = new HttpClient();
-        var chineseNames = await FetchChineseNamesAsync(hc);
+        var chineseInfos = await FetchChineseNamesAsync(hc);
+        var chineseNames = chineseInfos.ToDictionary(
+            kvp => kvp.Key,
+            kvp => kvp.Value.ChineseName
+        );
         var (modLinks, apiLinks) = await FetchContent(hc);
-        return new ModDatabase(modSource, modLinks, apiLinks, chineseNames);
+        return new ModDatabase(modSource, modLinks, apiLinks, chineseNames, chineseInfos);
     }
+
+    public class ModChineseInfo
+    {
+        public string ChineseName { get; set; } = "";
+        public string Desc { get; set; } = "";
+    }
+
+    public string ModDescription
+    {
+        get
+        {
+            if (SelectedMod == null) return string.Empty;
+            var en = SelectedMod.Description;
+            var cn = _chineseInfos.TryGetValue(SelectedMod.Name, out var info) ? info.Desc : "";
+            return string.IsNullOrWhiteSpace(cn) ? en : $"{en}\n{cn}";
+        }
+    }
+
+    // 在 ModDatabase 类中添加 SelectedMod 属性
+    public ModItem? SelectedMod { get; set; }
 }
