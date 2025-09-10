@@ -19,8 +19,8 @@
 - 搜索官方模组链接中可用的 500+ 模组。
 - 汉化了modlinks上的所有MOD
 - 支持中文MOD名称的搜索
-- 后续新增的MOD会显示英文名称
+- 对MOD描述进行汉化--使用AI机器翻译，未进行人工校准
 
 
 ## 贡献
-- [本程序汉化源代码Scarab](https://github.com/fifty-six/Scarab)
+- [感谢Scarab](https://github.com/fifty-six/Scarab)
