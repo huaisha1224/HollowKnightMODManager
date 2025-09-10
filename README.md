@@ -23,12 +23,4 @@
 
 
 ## 贡献
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 - [Scarab](https://github.com/fifty-six/Scarab)
-=======
-- [本程序汉化源代码Scarab](https://github.com/fifty-six/Scarab)
->>>>>>> Stashed changes
-=======
-- [本程序汉化源代码Scarab](https://github.com/fifty-six/Scarab)
->>>>>>> Stashed changes
