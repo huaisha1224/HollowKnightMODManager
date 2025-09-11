@@ -49,13 +49,6 @@
                         <TextBlock Text="查看日志" />
                     </StackPanel>
                 </Button>
-
-				<Button DockPanel.Dock="Right" HorizontalAlignment="Left" Command="{Binding OpenSource}">
-					<StackPanel Orientation="Horizontal" Spacing="5">
-						<i:Icon Value="fa-brands fa-github" />
-						<TextBlock Text="源代码" />
-					</StackPanel>
-				</Button>
                 <Button DockPanel.Dock="Right" HorizontalAlignment="Left" Command="{Binding OpenSilkSongInstaller}">
                     <StackPanel Orientation="Horizontal" Spacing="5">
                         <i:Icon Value="fa-solid fa-download" />

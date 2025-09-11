@@ -22,12 +22,8 @@
 
         <TabItem x:Name="SettingsTab" Header="设置" Content="{Binding SettingsPage, TargetNullValue=''}" />
 
-        <TabItem Header="使用帮助">
-            <s:HelpViewModel />
-        </TabItem>
+        <TabItem Header="使用帮助" Content="{Binding HelpPage}" />
 
-        <TabItem Header="关于">
-            <s:AboutViewModel />
-        </TabItem>
+        <TabItem Header="关于" Content="{Binding AboutPage}" />
     </TabControl>
 </Window>

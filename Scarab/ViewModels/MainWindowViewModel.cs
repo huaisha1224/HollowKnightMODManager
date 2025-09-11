@@ -15,6 +15,7 @@ using MessageBox.Avalonia.Enums;
 using MessageBox.Avalonia.Models;
 using Microsoft.Extensions.DependencyInjection;
 using DryIoc; // 这个文件需要引用
+using Scarab.ViewModels;
 
 namespace Scarab.ViewModels;
 
@@ -40,6 +41,12 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
 
     [Notify] 
     private SettingsViewModel? _settingsPage;
+    
+    [Notify]
+    private HelpViewModel? _helpPage;
+    
+    [Notify]
+    private AboutViewModel? _aboutPage;
 
     private async Task Impl()
     {
@@ -131,10 +138,20 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
         var chineseNames = await ModDatabase.FetchChineseNamesAsync(hc);
         con.RegisterInstance<IModSource>(mods);
 
-        con.RegisterDelegate<IModSource, IModDatabase>(src => new ModDatabase(src, content.ml, content.al, chineseNames));
+        con.RegisterDelegate<IModSource, IModDatabase>(src => 
+            new ModDatabase(
+                src, 
+                content.ml, 
+                content.al, 
+                chineseNames.ToDictionary(kv => kv.Key, kv => kv.Value.ChineseName), // 第4个参数: Dictionary<string, string>
+                chineseNames // 第5个参数: Dictionary<string, ModDatabase.ModChineseInfo>
+            )
+        );
         con.Register<IInstaller, Installer>();
         con.Register<ModPageViewModel>();
         con.Register<SettingsViewModel>();
+        con.Register<HelpViewModel>();
+        con.Register<AboutViewModel>();
 
         con.ValidateAndThrow();
         
@@ -153,6 +170,8 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
         Log.Information("Displaying model");
         
         SettingsPage = con.GetRequiredService<SettingsViewModel>();
+        HelpPage = con.GetRequiredService<HelpViewModel>();
+        AboutPage = con.GetRequiredService<AboutViewModel>();
         Content = con.GetRequiredService<ModPageViewModel>();
     }
 

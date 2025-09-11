@@ -6,7 +6,7 @@
         <LangVersion>10</LangVersion>
         <Nullable>enable</Nullable>
         <Version>3.0.0.6</Version>
-		<FileVersion>2025.9.10.1</FileVersion>
+		<FileVersion>2025.9.11.1</FileVersion>
         <UseAppHost>true</UseAppHost>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
