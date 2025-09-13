@@ -5,14 +5,14 @@
         <TargetFramework>net8.0</TargetFramework>
         <LangVersion>10</LangVersion>
         <Nullable>enable</Nullable>
-        <Version>3.0.0.6</Version>
-		<FileVersion>2025.9.11.1</FileVersion>
+        <Version>3.0.0.7</Version>
+		<FileVersion>2025.9.13.1</FileVersion>
         <UseAppHost>true</UseAppHost>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
         <ImplicitUsings>true</ImplicitUsings>
         <ApplicationIcon>Assets/omegamaggotprime.ico</ApplicationIcon>   
-		<AssemblyTitle>空洞骑士MOD管理器</AssemblyTitle>
+		<AssemblyTitle>空洞骑士MOD管理器(Scarab中文版)</AssemblyTitle>
 	    <Description>Hollow Knight Mod 管理工具</Description>
 	    <Product>HKModManager</Product>
     </PropertyGroup>

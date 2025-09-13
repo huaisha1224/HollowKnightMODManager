@@ -160,7 +160,7 @@
     <value>HTTP错误{0}</value>
   </data>
   <data name="MWVM_Impl_Error_Fetch_ModLinks_Msgbox_Text" xml:space="preserve">
-    <value>无法获取ModLinks，原因：{0}</value>
+    <value>无法获取ModLinks,请加速GitHub后重新启动程序.</value>
   </data>
   <data name="MWVM_Impl_Error_Fetch_ModLinks_Msgbox_Title" xml:space="preserve">
     <value>错误</value>
@@ -278,5 +278,14 @@
   </data>
   <data name="XAML_ModsFilter_OutOfDate_Update" xml:space="preserve">
     <value>全部更新</value>
+  </data>
+  <data name="NOTIFY_Installed" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="NOTIFY_Updated" xml:space="preserve">
+    <value>升级</value>
+  </data>
+  <data name="NOTIFY_Uninstalled" xml:space="preserve">
+    <value>卸载</value>
   </data>
 </root>
