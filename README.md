@@ -7,8 +7,9 @@
 ![screenshot](https://github.com/huaisha1224/HollowKnightMODManager/blob/main/screenshot.png)
 
 ## 使用说明
-- 从下载链接（或从发布页面手动）下载最新版本。
-- 搜索并下载您喜欢的模组。
+- 下载最新版本
+- 务必先安装API
+- 然后搜索并下载您喜欢的模组
 - 安装后，模组会出现在游戏标题屏幕的左上角。
 - 使用切换启用/禁用模组影响游戏，并使用橙色更新按钮更新过时的模组。
 - 下载安装MOD需要你能正常访问GitHub
