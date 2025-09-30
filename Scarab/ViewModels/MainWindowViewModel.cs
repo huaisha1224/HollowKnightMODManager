@@ -386,7 +386,7 @@ public partial class MainWindowViewModel : ViewModelBase, IActivatableViewModel
                     new MessageBoxCustomParams
                     {
                         ContentTitle = "发现新版本",
-                        ContentMessage = $"检测到新版本：{remoteVersion}\n请确认前去更新",
+                        ContentMessage = $"检测到新版本：{remoteVersion}\n点击确认前去更新",
                         ButtonDefinitions = new[]
                         {
                             new ButtonDefinition { Name = "确认", IsDefault = true }

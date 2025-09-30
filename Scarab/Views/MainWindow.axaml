@@ -11,7 +11,7 @@
         x:DataType="s:MainWindowViewModel"
         mc:Ignorable="d"
         Icon="/Assets/omegamaggotprime.ico"
-        Title="空洞骑士MOD管理器">
+        Title="空洞骑士MOD管理器(Scarab中文版)">
     <Design.DataContext>
         <s:MainWindowViewModel />
     </Design.DataContext>

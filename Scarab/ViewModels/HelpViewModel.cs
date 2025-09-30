@@ -40,7 +40,7 @@ public class HelpViewModel : ReactiveObject
             // 打开B站怀沙2049页面
             Process.Start(new ProcessStartInfo
             {
-                FileName = "https://space.bilibili.com/37443749",
+                FileName = "https://www.bilibili.com/video/BV1JrarzEEQD/",
                 UseShellExecute = true
             });
         });

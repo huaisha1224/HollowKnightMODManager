@@ -34,7 +34,7 @@
                 <Button DockPanel.Dock="Left" HorizontalAlignment="Left" Command="{Binding Donate}">
                     <StackPanel Orientation="Horizontal" Spacing="5">
                         <i:Icon Value="fa-brands fa-youtube" />
-                        <TextBlock Text="使用教程" />
+                        <TextBlock Text="皮肤MOD安装教程" />
                     </StackPanel>
                 </Button>
 				<Button DockPanel.Dock="Left" HorizontalAlignment="Left" Command="{Binding Download}">

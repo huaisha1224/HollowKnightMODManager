@@ -48,7 +48,7 @@ public class AboutViewModel : ViewModelBase
 
     private static void _Donate() 
     {
-        Process.Start(new ProcessStartInfo("https://www.bilibili.com/video/BV1JrarzEEQD") { UseShellExecute = true });
+        Process.Start(new ProcessStartInfo("https://www.bilibili.com/video/BV1FaJfzNExQ") { UseShellExecute = true });
     }
 
     private static void _Download()

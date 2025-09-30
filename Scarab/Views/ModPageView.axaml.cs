@@ -25,6 +25,17 @@ public partial class ModPageView : ReactiveUserControl<ModPageViewModel>
 
         this.WhenActivatedVM((vm, d) =>
         {
+            // 初始化通知管理器
+            var topLevel = TopLevel.GetTopLevel(this);
+            if (topLevel is Window window)
+            {
+                _notify = new WindowNotificationManager(window)
+                {
+                    Position = NotificationPosition.BottomRight, // 修改为底部居中显示
+                    MaxItems = 3
+                };
+            }
+
             vm.CompletedAction += OnComplete;
             vm.ExceptionRaised += OnError;
 
@@ -123,11 +134,12 @@ public partial class ModPageView : ReactiveUserControl<ModPageViewModel>
         }
     }
 
+    //新增安装卸载提示文案
     private void OnComplete(ModPageViewModel.ModAction act, ModItem mod)
     {
         string act_s = act switch
         {
-            ModPageViewModel.ModAction.Install => Localization.NOTIFY_Installed,
+            ModPageViewModel.ModAction.Install => Localization.NOTIFY_Installed, // 直接写中文或用资源
             ModPageViewModel.ModAction.Update => Localization.NOTIFY_Updated,
             ModPageViewModel.ModAction.Uninstall => Localization.NOTIFY_Uninstalled,
             // We don't display notifications for toggling - but keep an explicit arm for the sake of total matching

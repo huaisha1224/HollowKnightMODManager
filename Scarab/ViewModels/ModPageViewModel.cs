@@ -369,8 +369,8 @@ public partial class ModPageViewModel : ViewModelBase
         var dependentsString = string.Join(", ", dependents.Select(x => x.Name));
         var result = await MessageBoxManager.GetMessageBoxStandardWindow
         (
-            "Warning! This mod is required for other mods to function!",
-            $"{modName} is required for {dependentsString} to function properly. Do you still want to continue?",
+            "警告！其他模组若要正常运行，本模组为必需组件！",
+            $"{modName} 是 {dependentsString} 正常运行所必需的。你确定要继续吗？",
             icon: Icon.Stop,
             @enum: ButtonEnum.YesNo
         ).Show();
