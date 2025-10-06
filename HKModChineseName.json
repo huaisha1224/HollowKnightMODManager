@@ -1,0 +1,2223 @@
+{
+    "U-tils": {
+        "ChineseName": "U宇宙工具集(U-tils)",
+        "Desc": "专为 “U 宇宙”（U-tale）打造并供其使用的工具集合"
+    },
+    "Charm ReValance": {
+        "ChineseName": "护符重平衡(Charm ReValance)",
+        "Desc": "对护符与能力进行全面调整及自定义，（注：“Charm” 在此处特指《空洞骑士》等游戏中可装备的 “护符” 道具，“overhaul” 指对原有护符效果、能力机制的深度优化，“customization” 支持玩家根据玩法需求调整护符属性或能力参数，例如修改护符所需槽位、增强 / 削弱技能效果等，适配不同战斗流派或难度需求，让护符与能力搭配更灵活）。"
+    },
+    "MyHK": {
+        "ChineseName": "体验增强模组(MyHK)",
+        "Desc": "一款《空洞骑士》（HK）辅助模组，能显著提升游戏体验"
+    },
+    "Charm Editor": {
+        "ChineseName": "护符编辑器(Charm Editor)",
+        "Desc": "该模组允许你修改护符槽位数量与冲刺大师（护符/技能）相关设置"
+    },
+    "Limitations": {
+        "ChineseName": "解除限制(Limitations)",
+        "Desc": "创建非无限类的限制规则"
+    },
+    "OnlyBosses": {
+        "ChineseName": "只打BOSS(OnlyBosses)",
+        "Desc": "OnlyBosses是《TheHuntIsOn》敌人模组的替代方案（后者会移除普通敌人），但由于《TheHuntIsOn》已下架，因此推出了本模组"
+    },
+    "GPZPractice": {
+        "ChineseName": "神居佐特练习(GPZPractice)",
+        "Desc": "该模组允许你配置佐特灵（Zotelings）的生成方式"
+    },
+    "FrameLimiter": {
+        "ChineseName": "限制游戏帧率(FrameLimiter)",
+        "Desc": "可将帧率限制到任意你想要的数值（对特定帧的跳跃操作可能有帮助）"
+    },
+    "Faction Elimination": {
+        "ChineseName": "联机模式阵营对抗(Faction Elimination)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的一款自定义游戏模式，玩家组队收集强化道具并相互对抗"
+    },
+    "Wrong Gravity": {
+        "ChineseName": "颠倒重力(Wrong Gravity)",
+        "Desc": "圣巢？Hɐlloʍuǝsʇ！（注：文字反转，对应“重力反转”主题，原意为“圣巢？颠倒的圣巢！”）"
+    },
+    "Quasar Radiance": {
+        "ChineseName": "类星体辐光(Quasar Radiance)",
+        "Desc": "这是《Any Radiance 3.0》的修改版本，经深度调整后对休闲玩家更友好、更具趣味性，同时仍保留一定挑战性。这是一场极具特色的战斗，不会像原版辐光那样难度过高。该模组建议在300帧率上限下游玩，若帧率低于或高于此数值，战斗难度会比预期更难或更简单"
+    },
+    "ScreenShakeService": {
+        "ChineseName": "关闭屏幕震动(ScreenShakeService)",
+        "Desc": "移除屏幕抖动效果：屏幕抖动服务可专门消除《空洞骑士》中不必要的屏幕抖动，因为这类抖动可能会让部分玩家感到不适"
+    },
+    "Bonfire": {
+        "ChineseName": "营火(Bonfire)",
+        "Desc": "为《空洞骑士》添加了一套升级系统，带来更贴近《黑暗之魂》的沉浸式体验（《黑暗之魂》是一款广为人知的、被部分玩家认为对《空洞骑士》有启发的作品）"
+    },
+    "Lightbringer": {
+        "ChineseName": "携光者(Lightbringer)",
+        "Desc": "大幅革新游戏玩法：手持光之长矛穿梭圣巢，搭配全新护符与光辉法术，探寻困扰我们梦境的“束缚之光”"
+    },
+    "Exaltation": {
+        "ChineseName": "圣化(Exaltation)",
+        "Desc": "还原了曾被废弃的“护符升华”机制：通过推进神居（Godhome）的进度，可强化你的护符"
+    },
+    "Pale Shadow": {
+        "ChineseName": "苍白阴影(Pale Shadow)",
+        "Desc": "一款自制的纯粹容器（Pure Vessel）Boss战模组"
+    },
+    "INFINITY": {
+        "ChineseName": "无限(INFINITY)",
+        "Desc": "一款纯粹容器（Pure Vessel）Boss战模组"
+    },
+    "Floor is Lava": {
+        "ChineseName": "熔岩地面(Floor is Lava)",
+        "Desc": "《空洞骑士》的“地板即岩浆”主题模组，请务必阅读Read.me文件了解详情"
+    },
+    "Omega Radiance": {
+        "ChineseName": "欧米茄光辉(Omega Radiance)",
+        "Desc": "直面“力量之神”，这是《Any Radiance》的修改版本，制作初衷并非提升难度，而是打造一场酷炫且独特的战斗"
+    },
+    "Sunset Rad": {
+        "ChineseName": "落日光辉(Sunset Rad)",
+        "Desc": "修改版辐光（Radiance）Boss战模组"
+    },
+    "Sunset Samsara II": {
+        "ChineseName": "落日轮回 II(Sunset Samsara II)",
+        "Desc": "占位模组，需直接安装依赖模组“PURITY”"
+    },
+    "PURITY": {
+        "ChineseName": "纯粹(PURITY)",
+        "Desc": "《Sunset Samsara II》的更新版本，属于修改版辐光（Radiance）Boss战模组"
+    },
+    "Pure Shape": {
+        "ChineseName": "纯粹形态(Pure Shape)",
+        "Desc": "修改玩家的法术与 nail arts（ nail 技艺）效果，玩家可使用类似纯粹容器的技能，例如格挡反击"
+    },
+    "Castless Focus": {
+        "ChineseName": "无施法聚焦(Castless Focus)",
+        "Desc": "点击聚集（Focus）按钮时不会触发施法动作。（注：此设置会导致点击聚集按钮后必定进入聚集状态，延迟时间与长按按钮时一致）"
+    },
+    "BingoBoardReplay": {
+        "ChineseName": "宾果面板回放(BingoBoardReplay)",
+        "Desc": "专为宾果锦标赛组织者设计的模组，当玩家存在直播延迟时，可借助该模组重新直播宾果棋盘。使用方法请参考GitHub上的readme文件"
+    },
+    "ModCommon": {
+        "ChineseName": "通用模组工具(ModCommon)",
+        "Desc": "一款《空洞骑士》模组开发工具库，提供辅助工具与实用程序API，不建议在新开发的模组中使用"
+    },
+    "YetAnotherRandoConnection": {
+        "ChineseName": "随机化模组(YetAnotherRandoConnection)",
+        "Desc": "一款随机化器（Randomizer）附加模组，包含多种新增内容"
+    },
+    "BaldurRngConfig": {
+        "ChineseName": "巴尔德尔参数配置(BaldurRngConfig)",
+        "Desc": "可配置各类古老巴尔德尔（Elder Baldur，敌人名称）的相关设置"
+    },
+    "WrathOfTheSwarm": {
+        "ChineseName": "蜂群之怒(WrathOfTheSwarm)",
+        "Desc": "可将“聚集蜂群”（Gathering Swarm，护符）用作武器"
+    },
+    "SkillCharms": {
+        "ChineseName": "技能护符(SkillCharms)",
+        "Desc": "技能现已变为可装备的护符形式"
+    },
+    "VendorRando": {
+        "ChineseName": "商贩随机出现(VendorRando)",
+        "Desc": "一款随机化器附加模组，可随机调整商人在游戏中的实际位置"
+    },
+    "RainbowFlukes": {
+        "ChineseName": "彩虹吸虫(RainbowFlukes)",
+        "Desc": "使吸虫（Flukes）呈现彩虹色外观"
+    },
+    "PermaFlukes": {
+        "ChineseName": "永久吸虫(PermaFlukes)",
+        "Desc": "吸虫（Flukes）不会自动消失"
+    },
+    "GloriousGrimmMusic": {
+        "ChineseName": "格林战斗音乐(GloriousGrimmMusic)",
+        "Desc": "在与格林（Grimm）的整场战斗中，可一直播放其主题曲中更激昂的段落"
+    },
+    "GarfieldStorage": {
+        "ChineseName": "加菲猫储物模块(GarfieldStorage)",
+        "Desc": "该模组功能一目了然，无需额外说明"
+    },
+    "DebugCharms": {
+        "ChineseName": "护符调试工具(DebugCharms)",
+        "Desc": "专为护符调试设计的扩展工具模组"
+    },
+    "ShuffledCharmEffects": {
+        "ChineseName": "随机护符效果(ShuffledCharmEffects)",
+        "Desc": "已装备的护符会触发随机效果"
+    },
+    "Flukemaster": {
+        "ChineseName": "吸虫大师(Flukemaster)",
+        "Desc": "所有法术效果均会受到“吸虫巢”（Flukenest，护符）影响"
+    },
+    "EndlessIBaldur": {
+        "ChineseName": "无道具挑战巴德尔(EndlessIBaldur)",
+        "Desc": "一款用于练习“无道具挑战巴尔德尔”（itemless Baldur）的模组"
+    },
+    "Marmalade": {
+        "ChineseName": "果酱(Marmalade)",
+        "Desc": "使辐光（Radiance）生成玛姆（Marmu，角色名称）而非光球"
+    },
+    "Pogonest": {
+        "ChineseName": "无限蹬跳(Pogonest)",
+        "Desc": "可对任意物体使用弹跳机制（pogo，即用钉子敲击物体实现弹跳）"
+    },
+    "IntangibleShadow": {
+        "ChineseName": "可穿透披风(IntangibleShadow)",
+        "Desc": "暗影披风（Shade Cloak）几乎可穿透所有物体"
+    },
+    "CustomPlayerModel": {
+        "ChineseName": "玩家自定义模型(CustomPlayerModel)",
+        "Desc": "可用3D模型替换骑士（Knight）的2D精灵形象"
+    },
+    "InfiniteMapMarkers": {
+        "ChineseName": "无限地图标记(InfiniteMapMarkers)",
+        "Desc": "为何每种地图标记要限制在6个？本模组打破此限制"
+    },
+    "ShadesAnywhere": {
+        "ChineseName": "阴影随处可见(ShadesAnywhere)",
+        "Desc": "暗影（Shade，玩家死亡后生成的灵体）可在梦境、白宫（White Palace）与神居（Godhome）中生成"
+    },
+    "BetterModList": {
+        "ChineseName": "优化模组列表(BetterModList)",
+        "Desc": "可自定义模组列表的显示样式"
+    },
+    "UnconstrainedRotation": {
+        "ChineseName": "无限制旋转(UnconstrainedRotation)",
+        "Desc": "骑士（Knight）可自由旋转身体"
+    },
+    "FlappyKnight": {
+        "ChineseName": "飞扬骑士(FlappyKnight)",
+        "Desc": "在《空洞骑士》中体验《Flappy Bird》（像素鸟）玩法"
+    },
+    "Taxes": {
+        "ChineseName": "税收(Taxes)",
+        "Desc": "你的所有吉欧（Geo，游戏货币），意味着所有吉欧都需计入征税范围"
+    },
+    "Archiv": {
+        "ChineseName": "异变档案馆(Archiv)",
+        "Desc": "教师档案馆（Teacher's Archives）中存在异常情况"
+    },
+    "AlwaysWorldSense": {
+        "ChineseName": "永久感知世界(AlwaysWorldSense)",
+        "Desc": "立即解锁“世界感知”（World Sense，能力）"
+    },
+    "BingoGoalPack2": {
+        "ChineseName": "宾果目标包2(BingoGoalPack2)",
+        "Desc": "为自定义BingoSync挑战添加更精细的规则说明"
+    },
+    "KeybindOverhaul": {
+        "ChineseName": "优化按键绑定(KeybindOverhaul)",
+        "Desc": "通过拆分动作、组合按键与重复输入功能，增强按键绑定的自定义程度"
+    },
+    "MidasTouch": {
+        "ChineseName": "点石成金(MidasTouch)",
+        "Desc": "华丽躯壳（Gorgeous Husk，敌人名称）会掉落一款可将敌人转化为黄金的护符"
+    },
+    "HkmpTransitionAlerts": {
+        "ChineseName": "联机模式传送提示(HkmpTransitionAlerts)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，可高亮显示最近使用过的传送点（Transition）"
+    },
+    "CycloneCopter": {
+        "ChineseName": "延长旋风效果(CycloneCopter)",
+        "Desc": "延长旋风（Cyclone）效果以实现升空"
+    },
+    "PogoableFlukes": {
+        "ChineseName": "可弹跳的吸虫(PogoableFlukes)",
+        "Desc": "可借助吸虫巢（Flukenest）释放的吸虫（Flukes）进行弹跳（pogo）"
+    },
+    "AdBlocker": {
+        "ChineseName": "拦截广告(AdBlocker)",
+        "Desc": "屏蔽游戏内广告"
+    },
+    "VoiceToCrySuffering": {
+        "ChineseName": "痛苦的呐喊(VoiceToCrySuffering)",
+        "Desc": "对纯粹容器（Pure Vessel）Boss战进行的小幅调整模组"
+    },
+    "PlayerTrail": {
+        "ChineseName": "玩家轨迹(PlayerTrail)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，可为部分玩家角色添加持续显示的移动轨迹"
+    },
+    "KeepDiveIFrames": {
+        "ChineseName": "保留下冲无敌帧(KeepDiveIFrames)",
+        "Desc": "现在你可再次利用无敌帧（i-frames）频繁使用下潜（Dive）技能"
+    },
+    "UnlimitedHiveblood": {
+        "ChineseName": "无限蜂巢血(UnlimitedHiveblood)",
+        "Desc": "新增“蜂巢之血”（Hiveblood，护符）与“国王之魂”（Kingsoul）/“虚空之心”（Voidheart）的协同效果，实现无限回血"
+    },
+    "MilliGolf": {
+        "ChineseName": "迷你高尔夫(MilliGolf)",
+        "Desc": "包含18个球洞的高尔夫玩法模组，主角为“高尔夫球米莉贝尔”（Millibelle the Golf Ball）"
+    },
+    "NoTransitions": {
+        "ChineseName": "无场景切换(NoTransitions)",
+        "Desc": "模组不完整、存在漏洞，仅为演示版本。更多信息请查看ReadMe文件"
+    },
+    "WorseSteadyBody": {
+        "ChineseName": "更糟的稳定身体(WorseSteadyBody)",
+        "Desc": "使“稳定之体”（Steady Body，护符）的效果更稳定一致"
+    },
+    "DynamicCrystalDash": {
+        "ChineseName": "动态水晶冲刺(DynamicCrystalDash)",
+        "Desc": "水晶冲刺（Crystal Dash，简称CDash）的速度会根据蓄力时长变化"
+    },
+    "SaferWhitePalace": {
+        "ChineseName": "更安全的白色宫殿(SaferWhitePalace)",
+        "Desc": "可移除白宫（White Palace）中的各类危险元素"
+    },
+    "Elderbugnest": {
+        "ChineseName": "老虫子的巢穴(Elderbugnest)",
+        "Desc": "用“老虫子”（Elderbug，NPC名称）替换游戏中的多个NPC"
+    },
+    "BingoGoalPack1": {
+        "ChineseName": "宾果目标包1(BingoGoalPack1)",
+        "Desc": "为BingoSync添加更多挑战目标，并新增多种棋盘类型"
+    },
+    "BingoSyncExtension": {
+        "ChineseName": "宾果同步扩展(BingoSyncExtension)",
+        "Desc": "曾用于为BingoSync添加额外自动标记逻辑，现该模组已废弃"
+    },
+    "SiblingClimb": {
+        "ChineseName": "兄妹攀爬(SiblingClimb)",
+        "Desc": "移除灯塔（Lighthouse）攀爬区域的平台"
+    },
+    "UnlimitedShades": {
+        "ChineseName": "无限阴影(UnlimitedShades)",
+        "Desc": "多个暗影（Shade）可同时存在，因此吉欧（Geo）永远不会真正丢失"
+    },
+    "PersistentDivine": {
+        "ChineseName": "持久神圣(PersistentDivine)",
+        "Desc": "该模组可让迪瓦恩（Divine，NPC名称）的帐篷在你驱逐格林剧团（Grimm Troupe）后仍保留在德特茅斯（Dirtmouth），避免你意外错过获取“不可破坏护符”的机会"
+    },
+    "DarkerTransitions": {
+        "ChineseName": "更暗的场景切换(DarkerTransitions)",
+        "Desc": "将明亮的屏幕过渡效果改为黑色"
+    },
+    "Pale Court": {
+        "ChineseName": "苍白宫廷(Pale Court)",
+        "Desc": "在盛大的战斗中挑战圣巢最强大的冠军！用强大的新护符战胜对手！发掘新的秘密与故事！所有内容均搭配精彩的全新原声配乐！"
+    },
+    "FiendMod": {
+        "ChineseName": "恶魔模组(FiendMod)",
+        "Desc": "一款《空洞骑士》文本替换模组，将游戏中“傻瓜”（fool）一词替换为“恶魔”（fiend）"
+    },
+    "Floor Time Counter": {
+        "ChineseName": "地板计时器(Floor Time Counter)",
+        "Desc": "添加计数器，显示你接触地面的帧数"
+    },
+    "Snom": {
+        "ChineseName": "雪绒蛾(Snom)",
+        "Desc": "外观美化模组，将游戏中的提克提克（Tiktiks，敌人名称）替换为斯诺姆（Snom，源自其他游戏的角色形象）"
+    },
+    "Grub Names": {
+        "ChineseName": "幼虫名称(Grub Names)",
+        "Desc": "物品修改器（ItemChanger）/随机化器4（Randomizer 4）的附加模组，用斯库里的 grub 命名（Skurry's Grub Names）替换原版 grub（幼虫）名称"
+    },
+    "Hallownest-Vocalized": {
+        "ChineseName": "发声的霍尔温斯特(Hallownest-Vocalized)",
+        "Desc": "为《空洞骑士》所有游戏内对话添加英文配音"
+    },
+    "Hallownest-Vocalized-AudioLoader": {
+        "ChineseName": "发声的霍尔温斯特-音频加载器(Hallownest-Vocalized-AudioLoader)",
+        "Desc": "《Hallownest Vocalized》的依赖模组，若尚未安装，请与主模组一同下载"
+    },
+    "Disable Low Health Vignette": {
+        "ChineseName": "禁用低血量暗角效果(Disable Low Health Vignette)",
+        "Desc": "禁用低生命值时的暗角 vignette 效果（屏幕边缘渐暗效果）"
+    },
+    "Remove Haunted Foes": {
+        "ChineseName": "移除受诅咒的敌人(Remove Haunted Foes)",
+        "Desc": "该模组已被《Better Godhome Music》取代"
+    },
+    "Better Godhome Music": {
+        "ChineseName": "更好的神居音乐(Better Godhome Music)",
+        "Desc": "用全新的神居（Godhome）版本Boss曲目替换《Haunted Foes》（由本人制作）"
+    },
+    "STFUGrimmChild": {
+        "ChineseName": "闭嘴吧格林之子(STFUGrimmChild)",
+        "Desc": "让格林之子（Grimm Child）停止发声"
+    },
+    "Core.FsmUtil": {
+        "ChineseName": "核心.Fsm工具(Core.FsmUtil)",
+        "Desc": "用于有限状态机（FSM）编辑的库模组"
+    },
+    "Fyrenest": {
+        "ChineseName": "火之巢(Fyrenest)",
+        "Desc": "新增30款护符并添加全新探索内容！完整地图重制功能目前正在回滚，若想继续体验含地图修改的版本，可选择不更新模组，或从代码仓库获取最新版本"
+    },
+    "Mash Dash": {
+        "ChineseName": "疯狂冲刺(Mash Dash)",
+        "Desc": "可实现持续冲刺，冲刺速度更快，且无需刷新冲刺状态"
+    },
+    "Mash Slash": {
+        "ChineseName": "疯狂劈砍(Mash Slash)",
+        "Desc": "按按钮的速度越快，挥舞钉子（nail）的速度也越快"
+    },
+    "Charm Crab": {
+        "ChineseName": "护符螃蟹(Charm Crab)",
+        "Desc": "新增护符机制、全新护符、全新法术，并对原有内容进行平衡性调整"
+    },
+    "Nightmare Spark": {
+        "ChineseName": "噩梦火花(Nightmare Spark)",
+        "Desc": "添加一款格林剧团（Grimm Troupe）主题护符，该护符具备多种护符协同效果"
+    },
+    "Breakable Wall Randomizer": {
+        "ChineseName": "可破坏墙壁随机化(Breakable Wall Randomizer)",
+        "Desc": "《空洞骑士》随机化器的附加模组，用于随机化可破坏墙壁的相关设置"
+    },
+    "Heal On Wall": {
+        "ChineseName": "靠墙回血(Heal On Wall)",
+        "Desc": "使玩家可在墙壁上进行治疗（聚集Focus）"
+    },
+    "Better Void Heart": {
+        "ChineseName": "更好的虚空之心(Better Void Heart)",
+        "Desc": "获取虚空之心（Voidheart）后，仍保留国王之魂（Kingsoul）的灵魂回复效果"
+    },
+    "RadianceExtras": {
+        "ChineseName": "辐光附加挑战(RadianceExtras)",
+        "Desc": "为绝对辐光（Absolute Radiance）Boss战添加额外内容"
+    },
+    "Lost Artifacts": {
+        "ChineseName": "遗失古物(Lost Artifacts)",
+        "Desc": "该模组在整个圣巢中散布多件强大神器，这些神器可装备到钉子（nail）上！与随机化器4（Randomizer 4）兼容"
+    },
+    "Dead Quirrel": {
+        "ChineseName": "奎若已死(Dead Quirrel)",
+        "Desc": "奎若（Quirrel，NPC名称）已经死亡，别再自欺欺人了。目前该模组支持设置奎若是否显示面具"
+    },
+    "Challenge Mode": {
+        "ChineseName": "挑战模式(Challenge Mode)",
+        "Desc": "该模组为神居（Godhome）添加随机选择的挑战修饰符，提供多种自定义选项。修饰符等相关信息请查看ReadMe文件"
+    },
+    "DamageValues": {
+        "ChineseName": "伤害数值(DamageValues)",
+        "Desc": "攻击敌人时显示伤害数值"
+    },
+    "FallDamage": {
+        "ChineseName": "坠落伤害(FallDamage)",
+        "Desc": "玩家受到的坠落伤害与最大生命值及坠落时长成正比"
+    },
+    "ExtraMenuBackgrounds": {
+        "ChineseName": "额外菜单背景(ExtraMenuBackgrounds)",
+        "Desc": "在“额外内容”（Extras）菜单中添加5款全新主菜单主题"
+    },
+    "HueShifter": {
+        "ChineseName": "色调转换器(HueShifter)",
+        "Desc": "通过着色器改变圣巢的颜色，也可使整个场景呈现彩虹色效果"
+    },
+    "CriticalSlash": {
+        "ChineseName": "会心一击(CriticalSlash)",
+        "Desc": "若在最早时机释放 nail arts（钉子技艺），可造成额外伤害且更快恢复角色控制权"
+    },
+    "Mask Maker Notches": {
+        "ChineseName": "面具师护符槽(Mask Maker Notches)",
+        "Desc": "该模组在面具制作者（Mask Maker，NPC名称）的房间中添加多个可购买的护符槽位"
+    },
+    "CelesteKnight": {
+        "ChineseName": "塞莱斯廷骑士(CelesteKnight)",
+        "Desc": "添加《塞莱斯特》（Celeste）风格的移动方式，如冲刺、超级跳、超级冲刺、墙跳"
+    },
+    "Seer": {
+        "ChineseName": "先知(Seer)",
+        "Desc": "先知（Seer，NPC名称）修改版Boss战模组"
+    },
+    "AnyZote": {
+        "ChineseName": "任何佐特(AnyZote)",
+        "Desc": "有史以来最强的佐特（Zote）修改版Boss战模组"
+    },
+    "AbsoluteZote": {
+        "ChineseName": "神居佐特BOSS(AbsoluteZote)",
+        "Desc": "一款全新的灰色王子佐特（GPZ）修改版Boss战模组，需同时安装《AbsoluteZote》与《PureZote》才能启用《AnyZote》"
+    },
+    "Nailgod": {
+        "ChineseName": "骨钉神(Nailgod)",
+        "Desc": "斯莱（Sly，NPC名称）修改版Boss战模组"
+    },
+    "ZoteCollectorHelper": {
+        "ChineseName": "佐特收集助手(ZoteCollectorHelper)",
+        "Desc": "对灰色王子佐特（GPZ）与升华收藏家（Ascended Collector）进行调整，例如修改佐特灵（Zotelings）的生命值等"
+    },
+    "HitboxOnly": {
+        "ChineseName": "仅显示碰撞箱(HitboxOnly)",
+        "Desc": "仅显示碰撞箱（Hitbox），隐藏所有精灵图像。这会为多个Boss战带来全新体验，因为敌人的攻击预兆将不再可见"
+    },
+    "PureZote": {
+        "ChineseName": "纯粹佐特(PureZote)",
+        "Desc": "使灰色王子佐特（GPZ）可召唤“永恒折磨”（Eternal Ordeal）并升级其技能，需同时安装《AbsoluteZote》与《PureZote》才能启用《AnyZote》"
+    },
+    "niaPfohtaP (PoP Upside Down)": {
+        "ChineseName": "颠倒的PoP(niaPfohtaP (PoP Upside Down))",
+        "Desc": "使痛苦之路（Path of Pain，简称PoP）上下颠倒"
+    },
+    "SteelSoulHUD": {
+        "ChineseName": "钢铁之魂界面(SteelSoulHUD)",
+        "Desc": "在普通模式中启用钢铁之魂（Steel Soul）风格的HUD界面"
+    },
+    "Transcendence": {
+        "ChineseName": "超越(Transcendence)",
+        "Desc": "新增15款具备不同能力的护符，可与随机化器（Randomizer）搭配使用"
+    },
+    "RainbowEggs": {
+        "ChineseName": "彩虹蛋(RainbowEggs)",
+        "Desc": "随机化器附加模组，使腐臭蛋（Rancid Eggs）外观更具色彩"
+    },
+    "RandoZoomZoom": {
+        "ChineseName": "随机快速开局(RandoZoomZoom)",
+        "Desc": "随机化器附加模组，加快游戏前期的移动速度与吉欧（Geo）收集效率"
+    },
+    "BenchwarpSpoilerCloak": {
+        "ChineseName": "长椅传送剧透遮蔽(BenchwarpSpoilerCloak)",
+        "Desc": "长椅传送（Benchwarp）模组的附加组件，在菜单中隐藏尚未访问过的长椅名称"
+    },
+    "QoL": {
+        "ChineseName": "跳过各种动画(QoL)",
+        "Desc": "多款生活质量优化功能的集合模组"
+    },
+    "ScreenshotMachine": {
+        "ChineseName": "截图工具(ScreenshotMachine)",
+        "Desc": "一款用于优化《空洞骑士》截图制作的模组"
+    },
+    "AsciiCamera": {
+        "ChineseName": "ASCII相机(AsciiCamera)",
+        "Desc": "为相机添加着色器效果，使游戏画面以ASCII字符形式呈现"
+    },
+    "HollowTwitch": {
+        "ChineseName": "空洞骑士Twitch联动(HollowTwitch)",
+        "Desc": "允许Twitch聊天使用多种命令，为游戏玩法增添趣味与变数"
+    },
+    "Darkness": {
+        "ChineseName": "黑暗(Darkness)",
+        "Desc": "使所有房间都变为“黑暗房间”（类似未携带灯笼时需要灯笼照明的房间）"
+    },
+    "God Soul": {
+        "ChineseName": "神明之魂(God Soul)",
+        "Desc": "大幅提升游戏难度"
+    },
+    "Random Pantheons": {
+        "ChineseName": "随机万神殿(Random Pantheons)",
+        "Desc": "随机化神居（Godhome）中“圣巢万神殿”（Pantheons）的Boss顺序"
+    },
+    "Mantis Gods": {
+        "ChineseName": "螳螂诸神(Mantis Gods)",
+        "Desc": "显著增强螳螂领主（Mantis Lords）Boss战的难度"
+    },
+    "Sanic": {
+        "ChineseName": "索尼克(Sanic)",
+        "Desc": "可调整游戏的时间尺度（即游戏速度）"
+    },
+    "ModConsole": {
+        "ChineseName": "模组控制台(ModConsole)",
+        "Desc": "游戏内的C#交互式解释器（REPL），便于测试代码"
+    },
+    "The Pain of the Path": {
+        "ChineseName": "道路之痛(The Pain of the Path)",
+        "Desc": "允许玩家反向完成痛苦之路（Path of Pain），从通往国王模具（Kingsmoulds）的最终下落点上方开始"
+    },
+    "Pale Prince": {
+        "ChineseName": "苍白王子(Pale Prince)",
+        "Desc": "对纯粹容器（Pure Vessel）Boss战进行全面修改，难度显著提升"
+    },
+    "Vasi": {
+        "ChineseName": "瓦西(Vasi)",
+        "Desc": "包含多款实用工具类的库模组"
+    },
+    "Hell Mod": {
+        "ChineseName": "地狱模组(Hell Mod)",
+        "Desc": "对玩家进行多种削弱，对敌人进行多种强化，以此提升游戏难度"
+    },
+    "HowwowKnyight": {
+        "ChineseName": "豪沃骑士(HowwowKnyight)",
+        "Desc": "将《空洞骑士》（原文为Howwow Knyight，谐音趣味写法）中的所有文本转换为更有趣的UwU语系，包括菜单、用户界面与游戏内对话！OwO"
+    },
+    "Transtrans": {
+        "ChineseName": "超超变(Transtrans)",
+        "Desc": "提克提克（Tiktiks，敌人名称）主题模组，支持跨性别权利"
+    },
+    "Additional Timelines": {
+        "ChineseName": "额外时间线(Additional Timelines)",
+        "Desc": "在片尾字幕（Credits）播放完毕后，为统计屏幕添加额外时间线内容"
+    },
+    "GrassyKnight": {
+        "ChineseName": "打草骑士(GrassyKnight)",
+        "Desc": "跟踪并显示你割草的数量"
+    },
+    "CompassAlwaysOn": {
+        "ChineseName": "指南针常驻(CompassAlwaysOn)",
+        "Desc": "指南针效果常驻"
+    },
+    "GatheringSwarmAlwaysOn": {
+        "ChineseName": "永久蜜蜂护符(GatheringSwarmAlwaysOn)",
+        "Desc": "即使未装备“聚集蜂群”（Gathering Swarm）护符，仍可触发该护符的吉欧（Geo）自动收集效果"
+    },
+    "Kronk": {
+        "ChineseName": "克朗克(Kronk)",
+        "Desc": "用于速通的简单物体计数器，主要用于“Kronk%”速通类别（需激活所有杠杆）"
+    },
+    "KeybindChaos": {
+        "ChineseName": "键位随机(KeybindChaos)",
+        "Desc": "在设定时间（可自定义）后随机重置按键绑定"
+    },
+    "Enemy Randomizer": {
+        "ChineseName": "敌人随机(Enemy Randomizer)",
+        "Desc": "用于随机化敌人及相关元素的模组"
+    },
+    "Menderbug's Revenge": {
+        "ChineseName": "修理虫的复仇(Menderbug's Revenge)",
+        "Desc": "当你破坏背景物体时，骑士（Knight）会被杀死"
+    },
+    "Godseeker Memory Jump": {
+        "ChineseName": "寻神者记忆传送(Godseeker Memory Jump)",
+        "Desc": "用梦钉（Dream Nail）攻击神寻者（Godseeker）时，若朝右看，即可传送到隐藏记忆区域，即使此前已访问过该区域"
+    },
+    "BingoUI": {
+        "ChineseName": "宾果界面(BingoUI)",
+        "Desc": "自动跟踪随机化器（Randomizer）与速通宾果比赛（Speedrun Bingo Races）的宾果挑战目标"
+    },
+    "EssenceAlways": {
+        "ChineseName": "永久灵视(EssenceAlways)",
+        "Desc": "若拥有梦钉（Dream Nail），可选择杀死敌人时“始终掉落精华”或“永不掉落精华”"
+    },
+    "Invincibility Monitor": {
+        "ChineseName": "无敌状态监控(Invincibility Monitor)",
+        "Desc": "在特定场景中为玩家提供无敌状态"
+    },
+    "MylaFlower": {
+        "ChineseName": "米拉送花(MylaFlower)",
+        "Desc": "给米拉（Myla，NPC名称）带去一朵花，保护她免受感染"
+    },
+    "SkillUpgrades": {
+        "ChineseName": "技能升级(SkillUpgrades)",
+        "Desc": "提供多款骑士（Knight）技能的升级与调整功能，需进入模组菜单启用"
+    },
+    "CondensedSpoilerLogger": {
+        "ChineseName": "精简剧透日志(CondensedSpoilerLogger)",
+        "Desc": "查看重要物品/技能位置剧透"
+    },
+    "SkiploverSpoilerLog": {
+        "ChineseName": "跳过剧透日志(SkiploverSpoilerLog)",
+        "Desc": "在随机化器日志目录中生成一份“Skiplover剧透日志”，显示启用所有跳跃操作后可到达的内容"
+    },
+    "DapperMapperSpoils": {
+        "ChineseName": "华丽地图战利品(DapperMapperSpoils)",
+        "Desc": "在精简剧透日志中添加一个分类，显示13张地图的具体位置"
+    },
+    "NotSpikesmas": {
+        "ChineseName": "不是尖刺狂欢(NotSpikesmas)",
+        "Desc": "向随机化物品池添加一款可免疫尖刺伤害的物品"
+    },
+    "RandoPlus": {
+        "ChineseName": "随机增强版(RandoPlus)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，新增更多随机化选项，例如随机化蘑菇先生（Mr Mushroom）的位置"
+    },
+    "FountainPreview": {
+        "ChineseName": "喷泉预览(FountainPreview)",
+        "Desc": "物品修改器（ItemChanger）的附加模组，使盆地喷泉（Basin Fountain）显示其即将给予的物品"
+    },
+    "Randomizable Levers": {
+        "ChineseName": "随机拉杆(Randomizable Levers)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，新增随机化杠杆的选项，需在随机化器4的“连接”（Connections）菜单中激活杠杆随机化功能"
+    },
+    "Rope Rando": {
+        "ChineseName": "绳子随机(Rope Rando)",
+        "Desc": "将守望者骑士（Watcher Knights）Boss房间中的绳子/吊灯添加到随机化器4（Randomizer 4）的随机化列表中"
+    },
+    "TrandoPlus": {
+        "ChineseName": "Trando增强版(TrandoPlus)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，为传送随机化（Transition Rando）新增更多选项，例如仅随机化门口传送点"
+    },
+    "RecentItemsDisplay": {
+        "ChineseName": "最近物品显示(RecentItemsDisplay)",
+        "Desc": "物品修改器（ItemChanger）及随机化器（Rando）的附加模组，在屏幕右上角显示最近获得的拾取物"
+    },
+    "RandomizerSettingsRandomizer": {
+        "ChineseName": "随机设置随机器(RandomizerSettingsRandomizer)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，允许随机化模组设置，选择需随机化的设置请查看README文件"
+    },
+    "Scatternest": {
+        "ChineseName": "分散圣巢(Scatternest)",
+        "Desc": "随机化器（Randomizer）与物品同步（ItemSync）的附加模组，允许玩家从多个不同位置开始游戏"
+    },
+    "ContainerConfig": {
+        "ChineseName": "容器配置(ContainerConfig)",
+        "Desc": "物品修改器（ItemChanger）的附加模组，用于控制部分检查点（Checks）的显示方式"
+    },
+    "ReopenCityDoor": {
+        "ChineseName": "重开城门(ReopenCityDoor)",
+        "Desc": "打开真菌荒地（Fungal Wastes）与圣巢城市（City）之间的锁门（位于胡长老（Elder Hu）坟墓上方/通往十字路口（Crossroads）的电梯附近）"
+    },
+    "FStats": {
+        "ChineseName": "F统计(FStats)",
+        "Desc": "在片尾字幕（Credits）屏幕后显示一次游戏运行的部分统计数据"
+    },
+    "InfoPanelUtil": {
+        "ChineseName": "信息面板工具(InfoPanelUtil)",
+        "Desc": "通过调试模组（DebugMod）创建信息面板的工具类模组"
+    },
+    "PlayerDataManager": {
+        "ChineseName": "玩家数据管理器(PlayerDataManager)",
+        "Desc": "覆盖玩家数据值（例如，始终将“hasQuill”（是否拥有羽毛笔）设置为false）。拥有调试模组（DebugMod）会更便捷，但非必需"
+    },
+    "Benchwarp": {
+        "ChineseName": "长椅传送(Benchwarp)",
+        "Desc": "用于选择并传送到长椅的模组，也支持放置自定义长椅及传送到房间传送点"
+    },
+    "Randomizer 4": {
+        "ChineseName": "随机4(Randomizer 4)",
+        "Desc": "用于随机化物品及/或传送点的模组，提供多种自定义选项"
+    },
+    "ItemChanger": {
+        "ChineseName": "物品更换器(ItemChanger)",
+        "Desc": "为其他模组提供物品与位置编辑功能的基础模组"
+    },
+    "MenuChanger": {
+        "ChineseName": "菜单更换器(MenuChanger)",
+        "Desc": "为其他模组提供主菜单编辑功能的基础模组"
+    },
+    "RandomizerCore": {
+        "ChineseName": "随机核心(RandomizerCore)",
+        "Desc": "用于随机化器逻辑与算法的库模组"
+    },
+    "RandomizerCore.Json": {
+        "ChineseName": "随机核心.Json(RandomizerCore.Json)",
+        "Desc": "为RandomizerCore添加JSON格式逻辑数据支持的库模组"
+    },
+    "ItemChangerDataLoader": {
+        "ChineseName": "物品更换器数据加载器(ItemChangerDataLoader)",
+        "Desc": "用于创建随机化器存档备份及启动预设种子（Plandos）的模组"
+    },
+    "ICExtraDeployers": {
+        "ChineseName": "物品替换额外放置(ICExtraDeployers)",
+        "Desc": "物品修改器（ItemChanger）的附加模组，预加载更多对象。对于包含自定义巴尔德尔（Baldurs）、大门等元素的IC文件，需将此模组作为依赖项"
+    },
+    "CustomPoolInjector": {
+        "ChineseName": "自定义池注入器(CustomPoolInjector)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，允许用户自定义物品池，以随机化不同物品组合"
+    },
+    "CustomLogicInjector": {
+        "ChineseName": "自定义逻辑注入器(CustomLogicInjector)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，允许用户自定义逻辑编辑规则"
+    },
+    "CustomGroupInjector": {
+        "ChineseName": "自定义组注入器(CustomGroupInjector)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，允许用户为不同拆分组随机化选项自定义物品组"
+    },
+    "CustomConstraintInjector": {
+        "ChineseName": "自定义约束注入器(CustomConstraintInjector)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，允许用户自定义物品放置约束规则，并编辑物品与位置的优先级权重"
+    },
+    "BenchRando": {
+        "ChineseName": "随机长椅(BenchRando)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，可将长椅随机分配到新位置，并将“传送到长椅”的能力作为物品进行随机化"
+    },
+    "ItemSync": {
+        "ChineseName": "物品同步(ItemSync)",
+        "Desc": "随机化器模组4（RandomizerMod 4）的附加模组，支持玩家之间共享物品拾取。默认IP已失效，若需连接公共服务器，请使用“mw.hkmp.org”"
+    },
+    "MultiWorld": {
+        "ChineseName": "多世界(MultiWorld)",
+        "Desc": "随机化器模组4（RandomizerMod 4）的附加模组，支持在所有玩家的游戏世界之间分配物品。默认IP已失效，若需连接公共服务器，请使用“mw.hkmp.org”"
+    },
+    "MultiWorldLib": {
+        "ChineseName": "多世界库(MultiWorldLib)",
+        "Desc": "用于物品同步（ItemSync）与多世界（MultiWorld）网络传输的库模组"
+    },
+    "PaletteSwapper": {
+        "ChineseName": "调色板切换器(PaletteSwapper)",
+        "Desc": "修改房间颜色色调的模组"
+    },
+    "InfiniteNotches": {
+        "ChineseName": "无限槽位(InfiniteNotches)",
+        "Desc": "可切换的模组，启用后获得无限护符槽位"
+    },
+    "EasyMode": {
+        "ChineseName": "简单模式(EasyMode)",
+        "Desc": "可切换的模组，启用后降低游戏难度"
+    },
+    "LoadNormalizer": {
+        "ChineseName": "加载重整(LoadNormalizer)",
+        "Desc": "将加载时间延长至用户设定的上限，以同步比赛中的加载进度"
+    },
+    "Hollow Knight Achievement Manager": {
+        "ChineseName": "空洞骑士成就管理器(Hollow Knight Achievement Manager)",
+        "Desc": "占位模组，需直接安装依赖模组“HollowKnightAchievementManager”"
+    },
+    "Peaking Peeking Peaks": {
+        "ChineseName": "偷窥的山峰(Peaking Peeking Peaks)",
+        "Desc": "占位模组，需直接安装依赖模组“PeakingPeekingPeaks”"
+    },
+    "PvP Arena": {
+        "ChineseName": "PVP竞技场(PvP Arena)",
+        "Desc": "占位模组，需直接安装依赖模组“PvpArena”"
+    },
+    "Stories of a HK player - Chapter 1": {
+        "ChineseName": "空洞骑士玩家的故事-第一章(Stories of a HK player(Stories of a HK player - Chapter 1)",
+        "Desc": "占位模组，需直接安装依赖模组“StoriesOfaHkPlayer-Ch1”"
+    },
+    "Stories of a HK player - Chapter 2": {
+        "ChineseName": "空洞骑士玩家的故事-第二章(Stories of a HK player(Stories of a HK player - Chapter 2)",
+        "Desc": "占位模组，需直接安装依赖模组“StoriesOfaHkPlayer-Ch2”"
+    },
+    "Test of Teamwork": {
+        "ChineseName": "团队合作测试(Test of Teamwork)",
+        "Desc": "占位模组，需直接安装依赖模组“TestOfTeamwork”"
+    },
+    "Zaliants Surprise": {
+        "ChineseName": "Zaliant 的小惊喜(Zaliants Surprise)",
+        "Desc": "占位模组，需直接安装依赖模组“ZaliantsSurprise”"
+    },
+    "AdditionalMaps": {
+        "ChineseName": "额外地图(AdditionalMaps)",
+        "Desc": "添加白宫（White Palace）与神居（Godhome）的地图。白宫地图位于大房间的长椅旁，神居地图位于万神殿上方的长椅旁"
+    },
+    "BenchWarpFix": {
+        "ChineseName": "长椅传送修复(BenchWarpFix)",
+        "Desc": "当通过长椅传送（Benchwarp）进入无长椅的场景时，不会导致游戏软锁，而是将玩家传送到德特茅斯（Dirtmouth）。该模组可能不适用于存在漏洞的游戏运行"
+    },
+    "BlindRadiance": {
+        "ChineseName": "盲目光辉(BlindRadiance)",
+        "Desc": "使选定场景的背景更暗，让前景物体更清晰可见"
+    },
+    "CarefreeRngReset": {
+        "ChineseName": "无忧随机重置(CarefreeRngReset)",
+        "Desc": "该模组在玩家进入神堂（Hall of Gods）时，将“无忧无虑的旋律”（Carefree Melody）护符的随机格挡概率重置为最高值"
+    },
+    "ColosseumTrophy": {
+        "ChineseName": "斗兽场奖杯(ColosseumTrophy)",
+        "Desc": "重新启用斗兽场（Colosseum）奖杯的删减内容"
+    },
+    "CursedMod": {
+        "ChineseName": "诅咒模组(CursedMod)",
+        "Desc": "该模组包含多种杂项功能，例如在Windows系统中使游戏窗口显示为深色模式"
+    },
+    "CustomBgm": {
+        "ChineseName": "自定义背景音乐(CustomBgm)",
+        "Desc": "允许自定义游戏背景音乐，使用方法请查看其readme文件"
+    },
+    "CustomSaveArt": {
+        "ChineseName": "自定义存档图标(CustomSaveArt)",
+        "Desc": "使白宫（White Palace）的存档图像更有趣，除此之外无其他功能"
+    },
+    "EnemyChanger": {
+        "ChineseName": "敌人更换器(EnemyChanger)",
+        "Desc": "允许导出并替换敌人的纹理图像，操作方法请参考readme文件"
+    },
+    "FireIsSmolBrain": {
+        "ChineseName": "火是小脑袋(FireIsSmolBrain)",
+        "Desc": "在德特茅斯（Dirtmouth）添加一个灵魂图腾，并封锁所有Boss竞技场"
+    },
+    "FullSpeedAhead": {
+        "ChineseName": "全速前进(FullSpeedAhead)",
+        "Desc": "移除壁反（Parry）操作后的减速效果"
+    },
+    "FuryFix": {
+        "ChineseName": "愤怒修复(FuryFix)",
+        "Desc": "尝试为最大生命值为1的存档修复“陨落暴怒”（Fury of the Fallen）护符的效果"
+    },
+    "GeoLog": {
+        "ChineseName": "吉欧日志(GeoLog)",
+        "Desc": "记录游戏中所有吉欧（Geo）的位置，模组启动时会遍历整个游戏世界"
+    },
+    "GraphicOptions": {
+        "ChineseName": "图形选项(GraphicOptions)",
+        "Desc": "新增若干图形设置选项，部分选项在调整时可能存在不稳定性"
+    },
+    "HKHKHKHKHK": {
+        "ChineseName": "空洞空洞空洞空洞空洞(HKHKHKHKHK)",
+        "Desc": "在《空洞骑士》中体验《VVVVVV》（一款平台跳跃游戏）的玩法，按R键翻转重力"
+    },
+    "HollowKnightAchievementManager": {
+        "ChineseName": "空洞骑士成就管理器(HollowKnightAchievementManager)",
+        "Desc": "允许管理《空洞骑士》的成就（包括原版与模组成就），还可与选定的在线商店（GOG、Steam、Xbox）同步成就，同时支持解锁/锁定菜单主题与游戏模式"
+    },
+    "LanguageSupport": {
+        "ChineseName": "语言支持(LanguageSupport)",
+        "Desc": "支持添加更多语言，目前暂不支持部分其他语言的特殊字符"
+    },
+    "MenuThemesInGame": {
+        "ChineseName": "游戏内菜单主题(MenuThemesInGame)",
+        "Desc": "将菜单的颜色校正效果应用到游戏玩法中，可能会破坏游戏沉浸感"
+    },
+    "MoreHealing": {
+        "ChineseName": "更多治疗(MoreHealing)",
+        "Desc": "新增多款具备治疗功能的护符"
+    },
+    "MoreMapMarkers": {
+        "ChineseName": "更多地图标记(MoreMapMarkers)",
+        "Desc": "新增可自定义数量的地图标记"
+    },
+    "MoreMasks": {
+        "ChineseName": "更多面具(MoreMasks)",
+        "Desc": "使更多面具可在界面显示，也支持生命血（Lifeblood）面具。默认每行显示28个面具，可通过编辑该模组的globalsettings文件调整数量"
+    },
+    "MoreNotches": {
+        "ChineseName": "更多槽位(MoreNotches)",
+        "Desc": "使更多护符槽位可在界面显示，也支持过度护符（Overcharm）与护符细节槽位。默认显示最多50个已装备槽位与20个护符细节槽位，可通过编辑该模组的globalsettings文件调整数量"
+    },
+    "NailsmithBackPay": {
+        "ChineseName": "骨钉匠退款(NailsmithBackPay)",
+        "Desc": "升级钉子（nail）后，可从钉子匠（Nailsmith）处取回花费的吉欧（Geo）"
+    },
+    "NeverMuffle": {
+        "ChineseName": "永不消音(NeverMuffle)",
+        "Desc": "移除玩家受到伤害时的声音闷响效果"
+    },
+    "PeakingPeekingPeaks": {
+        "ChineseName": "偷窥的山峰(PeakingPeekingPeaks)",
+        "Desc": "该模组旨在让“水晶山峰”（Crystal Peak）的名称更易记"
+    },
+    "PvpArena": {
+        "ChineseName": "PVP竞技场(PvpArena)",
+        "Desc": "该模组添加一个PVP竞技场，其隐形入口位于德特茅斯（Dirtmouth）的长椅右侧"
+    },
+    "RadiantMenu": {
+        "ChineseName": "辐光菜单主题(RadiantMenu)",
+        "Desc": "为游戏添加一款“光辉”（Radiant）风格的菜单主题"
+    },
+    "RedoBirthplace": {
+        "ChineseName": "重做出生地(RedoBirthplace)",
+        "Desc": "重新播放“出生地”（Birthplace）的过场动画"
+    },
+    "ResetCharmNotches": {
+        "ChineseName": "重置护符槽位(ResetCharmNotches)",
+        "Desc": "重置护符槽位数量与护符槽位消耗成本"
+    },
+    "ScenePainter": {
+        "ChineseName": "场景画家(ScenePainter)",
+        "Desc": "生成游戏中所有场景的SVG格式图像，可按K键手动启动生成"
+    },
+    "ScreenResolution": {
+        "ChineseName": "屏幕分辨率(ScreenResolution)",
+        "Desc": "新增更多可用的屏幕分辨率选项"
+    },
+    "SFCore": {
+        "ChineseName": "SFCore核心工具(SFCore)",
+        "Desc": "其他模组依赖的库模组"
+    },
+    "ShowFPS": {
+        "ChineseName": "显示帧率(ShowFPS)",
+        "Desc": "在屏幕右下角显示帧率（FPS）的模组"
+    },
+    "SpriteDumper": {
+        "ChineseName": "贴图导出(SpriteDumper)",
+        "Desc": "导出游戏精灵图像的模组，每次导出可能需要10分钟以上，按P键启动导出"
+    },
+    "StoriesOfaHkPlayer-Ch1": {
+        "ChineseName": "空洞骑士玩家的故事-第一章(StoriesOfaHkPlayer-Ch1)",
+        "Desc": "讲述一位《空洞骑士》玩家与他的个性化游戏副本的故事开端"
+    },
+    "StoriesOfaHkPlayer-Ch2": {
+        "ChineseName": "空洞骑士玩家的故事-第二章(StoriesOfaHkPlayer-Ch2)",
+        "Desc": "讲述一位《空洞骑士》玩家与他的个性化游戏副本的故事续篇。\n为直播该模组的玩家提示：该模组会显示你的Windows/Mac/Linux用户名"
+    },
+    "SvgLib": {
+        "ChineseName": "Svg库(SvgLib)",
+        "Desc": "适用于.NET Framework与.NET Core的SVG解析器及合成器库"
+    },
+    "TestOfTeamwork": {
+        "ChineseName": "团队合作测试(TestOfTeamwork)",
+        "Desc": "向白宫（White Palace）添加一个“痛苦之路”（Path of Pain）风格的区域。\n通过与德特茅斯（Dirtmouth）内外的NPC对话开始体验。\n这是一款单人模组，“团队合作”（Teamwork）指游戏内事件"
+    },
+    "VoidHeartMenu": {
+        "ChineseName": "虚空之心菜单(VoidHeartMenu)",
+        "Desc": "使“虚空之心版”（Voidheart Edition）的文本在PC版游戏中显示"
+    },
+    "WideCamera": {
+        "ChineseName": "广角相机(WideCamera)",
+        "Desc": "支持超宽屏显示，无黑边，理论上也适用于非16:9比例的窄屏或高屏"
+    },
+    "ZaliantsSurprise": {
+        "ChineseName": "扎利恩茨的惊喜(ZaliantsSurprise)",
+        "Desc": "这是扎利安特（Zaliant）提出的模组创意。\n旧描述：这是《苍白法庭》（Pale Court）模组。\n尽情享受！"
+    },
+    "RandomGravityChange": {
+        "ChineseName": "随机重力变化(RandomGravityChange)",
+        "Desc": "定期或按指定按键时随机改变重力的模组"
+    },
+    "RandomTeleport": {
+        "ChineseName": "随机传送(RandomTeleport)",
+        "Desc": "定期、按指定按键或受到伤害时，将玩家随机传送到另一个场景的模组"
+    },
+    "DebugMod": {
+        "ChineseName": "无敌-调试模组(DebugMod)",
+        "Desc": "提供调试工具与功能，例如穿墙（No Clip）、无敌、移除与给予物品及能力等"
+    },
+    "SpeedRunQoL": {
+        "ChineseName": "速通练习工具(SpeedRunQoL)",
+        "Desc": "一款调试附加模组，新增多款适用于速通练习的按键绑定，提升生活质量。目前包含位置保存状态、漏洞绑定、强制乌姆（Uumuu）额外攻击及辐光（Radiance）快速重新加载功能"
+    },
+    "MoreSaves": {
+        "ChineseName": "更多存档(MoreSaves)",
+        "Desc": "支持无限存档，通过模组菜单提供备份/恢复、重命名、锁定及编辑存档数值等功能。注：编辑当前正在游玩的存档，修改会实时在游戏中生效"
+    },
+    "Gorb Plus": {
+        "ChineseName": "戈布加强版(Gorb Plus)",
+        "Desc": "该模组在与戈布（Gorb，Boss名称）战斗时新增一种攻击方式：钉子弹幕（Nail Barrage）"
+    },
+    "HKMP HealthDisplay": {
+        "ChineseName": "HKMP生命值显示(HKMP HealthDisplay)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，需依赖HkmpPouch模组，支持公共服务器，可显示其他玩家的生命值"
+    },
+    "Gravity Mod": {
+        "ChineseName": "重力模组(Gravity Mod)",
+        "Desc": "为所有物体添加重力效果"
+    },
+    "GlassSoul": {
+        "ChineseName": "玻璃之魂(GlassSoul)",
+        "Desc": "使玩家一击即死，同时在模组菜单中添加选项：每多1点额外生命值，增加1点造成的伤害"
+    },
+    "Toggle Rando Split Options": {
+        "ChineseName": "随机分裂选项切换(Toggle Rando Split Options)",
+        "Desc": "可切换绑定（Toggleable Bindings）模组的扩展组件，将拆分爪钩（Split Claw）、拆分披风（Split Cloak）与受诅咒的钉子（Cursed Nail）添加到绑定列表中"
+    },
+    "Hide Mod List": {
+        "ChineseName": "隐藏模组列表(Hide Mod List)",
+        "Desc": "允许隐藏模组列表，或减少模组列表在屏幕上占据的空间"
+    },
+    "Additional Challenge": {
+        "ChineseName": "额外挑战(Additional Challenge)",
+        "Desc": "该模组提供46种不同效果，可增强游戏挑战性。包含4类效果（持久型、冷却型、Boss攻击型、敌人跟随型），可在模组菜单中启用。还包含“混乱模式”，会定期随机选择效果触发"
+    },
+    "Poorly Translated": {
+        "ChineseName": "蹩脚翻译(Poorly Translated)",
+        "Desc": "《空洞骑士》劣质翻译版，游戏中所有文本均经过多轮谷歌翻译处理，支持英语、德语、西班牙语、法语、意大利语及中文。注：英语翻译从1.4版本起进行了调整，翻译质量更差"
+    },
+    "HKMirror": {
+        "ChineseName": "空洞镜像(HKMirror)",
+        "Desc": "一款核心模组，便于访问玩家数据（PlayerData）、使用反射（Reflection）及钩子（On/IL Hooks）功能"
+    },
+    "ControllerFixes": {
+        "ChineseName": "控制器修复(ControllerFixes)",
+        "Desc": "修复部分手柄问题，并添加相关功能"
+    },
+    "NoDying": {
+        "ChineseName": "无敌-锁血(NoDying)",
+        "Desc": "简易模组，使玩家生命值不会低于1"
+    },
+    "WeaverCore": {
+        "ChineseName": "编织者核心(WeaverCore)",
+        "Desc": "基于WeaverCore开发的模组（如《地狱之王格林》（Inferno King Grimm）、《腐化亲属》（Corrupted Kin））所需的核心依赖模组"
+    },
+    "Inferno King Grimm": {
+        "ChineseName": "炼狱格林王(Inferno King Grimm)",
+        "Desc": "大幅增强梦魇之王格林（Nightmare King Grimm），使其变为多阶段Boss战的模组，在主菜单中可配置“困难模式”"
+    },
+    "Corrupted Kin": {
+        "ChineseName": "被污染的亲属(Corrupted Kin)",
+        "Desc": "对失落亲属（Lost Kin）Boss战进行大幅调整的模组"
+    },
+    "Crystal Machinist": {
+        "ChineseName": "水晶机械师(Crystal Machinist)",
+        "Desc": "对愤怒守卫者（Enraged Guardian）Boss战进行大幅调整的模组"
+    },
+    "More Godhome Space": {
+        "ChineseName": "更多神居空间(More Godhome Space)",
+        "Desc": "在神堂（Hall of Gods）区域添加第三层空间，以便容纳更多修改版Boss"
+    },
+    "Ancient Aspid": {
+        "ChineseName": "古老吸虫(Ancient Aspid)",
+        "Desc": "《空洞骑士》模组，在王国边缘（Kingdom's Edge）添加一场全新且具有挑战性的Boss战"
+    },
+    "HKMP": {
+        "ChineseName": "HKMP（空洞骑士多人联机）(HKMP)",
+        "Desc": "《空洞骑士》多人联机模组（Hollow Knight Multiplayer），支持玩家创建房间并邀请他人加入冒险"
+    },
+    "HKMP Prop Hunt": {
+        "ChineseName": "HKMP 躲猫猫模式(HKMP Prop Hunt)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，在多人游戏中添加“躲猫猫”（Prop Hunt）玩法"
+    },
+    "HKVR": {
+        "ChineseName": "HKVR（空洞骑士VR）(HKVR)",
+        "Desc": "支持通过虚拟现实（VR）设备游玩《空洞骑士》"
+    },
+    "Enemy HP Bar": {
+        "ChineseName": "敌人血条(Enemy HP Bar)",
+        "Desc": "为游戏中所有敌人与Boss添加可自定义皮肤的生命值条（HP Bar）"
+    },
+    "MagicUI": {
+        "ChineseName": "魔法界面(MagicUI)",
+        "Desc": "用于帮助其他模组构建用户界面（UI）的核心模组，单独使用无实际功能"
+    },
+    "ConnectionMetadataInjector": {
+        "ChineseName": "连接元数据注入器(ConnectionMetadataInjector)",
+        "Desc": "核心模组，允许《RandoStats》《MapModS》等随机化辅助模组从连接中获取自定义元数据，无需强制依赖"
+    },
+    "RandoStats": {
+        "ChineseName": "随机完成度(RandoStats)",
+        "Desc": "随机化辅助模组，在通关屏幕上显示详细的检查点（Checks）与物品获取统计数据"
+    },
+    "MajorItemByAreaTracker": {
+        "ChineseName": "主要物品追踪器(MajorItemByAreaTracker)",
+        "Desc": "随机化连接模组，添加半剧透式随机化游戏模式，并包含游戏内追踪器"
+    },
+    "RandoChecksCounter": {
+        "ChineseName": "随机检查计数器(RandoChecksCounter)",
+        "Desc": "《空洞骑士》模组，实时显示已检查的位置数量"
+    },
+    "TheRealJournalRando": {
+        "ChineseName": "真正的日志随机(TheRealJournalRando)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，新增随机化所有其他猎人日志（Hunter's Journal）条目的选项，需在随机化器4的“连接”（Connections）菜单中激活"
+    },
+    "RandoSettingsManager": {
+        "ChineseName": "随机配置管理(RandoSettingsManager)",
+        "Desc": "《空洞骑士》模组，重新实现并扩展随机化器的设置共享与预设管理功能，全面支持连接模组"
+    },
+    "ModTerminal": {
+        "ChineseName": "模组终端(ModTerminal)",
+        "Desc": "调试模组（DebugMod）的附加组件，在游戏内添加终端，支持输入命令与作弊代码"
+    },
+    "ICDebug": {
+        "ChineseName": "物品替换调试(ICDebug)",
+        "Desc": "ModTerminal的附加组件，添加与物品修改器（ItemChanger）相关的命令"
+    },
+    "MoreLocations": {
+        "ChineseName": "更多随机点(MoreLocations)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，为随机化器新增多种位置，需在随机化器4的“连接”（Connections）菜单中激活"
+    },
+    "ICPlandoTools": {
+        "ChineseName": "IC定制工具(ICPlandoTools)",
+        "Desc": "为预设种子（Plando）制作者提供多种实用工具"
+    },
+    "GhostHunter": {
+        "ChineseName": "幽灵猎人(GhostHunter)",
+        "Desc": "多人游戏时显示其他玩家敌人位置的模组"
+    },
+    "EmoteWheel": {
+        "ChineseName": "表情轮盘(EmoteWheel)",
+        "Desc": "支持使用自定义表情的模组，若服务器安装HkmpPouch模组，多人游戏时也可使用"
+    },
+    "MultiplayerEvents": {
+        "ChineseName": "多人事件(MultiplayerEvents)",
+        "Desc": "添加多种多人游戏互动功能的模组"
+    },
+    "HkmpPouch": {
+        "ChineseName": "HKMP小袋(HkmpPouch)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）可选附加组件的依赖模组，支持网络功能"
+    },
+    "Satchel": {
+        "ChineseName": "背包(Satchel)",
+        "Desc": "Satchel意为“小背包”，本模组为其他模组提供实用功能支持"
+    },
+    "Custom Knight": {
+        "ChineseName": "切换皮肤,皮肤MOD(Custom Knight)",
+        "Desc": "修改玩家、敌人贴图，以及修改整片地区"
+    },
+    "Asymmetric Knight": {
+        "ChineseName": "不对称骑士(Asymmetric Knight)",
+        "Desc": "自定义骑士（Custom Knight）的附加模组，允许骑士（Knight）朝左与朝右的精灵图像不同。需添加“Knight_left.png”“Sprint_left.png”“Unn_left.png”文件以启用该功能"
+    },
+    "RandomCompanions": {
+        "ChineseName": "随机伙伴(RandomCompanions)",
+        "Desc": "自定义骑士（Custom Knight）的附加模组，允许幼崽（Hatchlings）与织者幼虫（Weaverlings）使用所有可用皮肤"
+    },
+    "SmolKnight": {
+        "ChineseName": "小骑士(SmolKnight)",
+        "Desc": "允许调整骑士（Knight）的体型大小"
+    },
+    "All4Love": {
+        "ChineseName": "全为爱(All4Love)",
+        "Desc": "人人皆爱（Love 4 All）"
+    },
+    "SmashKnight": {
+        "ChineseName": "粉碎骑士(SmashKnight)",
+        "Desc": "根据剩余生命值调整骑士（Knight）的操控手感"
+    },
+    "ESoulLink": {
+        "ChineseName": "敌人灵魂链接(ESoulLink)",
+        "Desc": "Pouch模组，使敌人在《空洞骑士》多人联机模组（HKMP）服务器中共享生命值"
+    },
+    "ModScript": {
+        "ChineseName": "模组脚本(ModScript)",
+        "Desc": "允许通过JavaScript编写脚本以修改游戏"
+    },
+    "HKmote": {
+        "ChineseName": "空洞表情(HKmote)",
+        "Desc": "多人游戏时可使用表情"
+    },
+    "Hat": {
+        "ChineseName": "帽子(Hat)",
+        "Desc": "允许骑士（Knight）佩戴帽子"
+    },
+    "Memesong": {
+        "ChineseName": "梗曲(Memesong)",
+        "Desc": "游戏时可播放趣味梗音频片段（可添加或移除片段，使其适合直播）"
+    },
+    "GrubTrain": {
+        "ChineseName": "幼虫伙伴(GrubTrain)",
+        "Desc": "使幼虫（Grubs）成为同伴"
+    },
+    "Konpanion": {
+        "ChineseName": "伙伴小骑士(Konpanion)",
+        "Desc": "添加一位小型骑士同伴"
+    },
+    "Glass Cannon Mod": {
+        "ChineseName": "玻璃大炮(Glass Cannon Mod)",
+        "Desc": "使所有单位（包括玩家）均为一击必杀"
+    },
+    "FrogCore": {
+        "ChineseName": "青蛙核心(FrogCore)",
+        "Desc": "库模组，包含添加日志条目、NPC、商店的辅助工具，以及多款用于编辑和创建精灵集合与动画的tk2d辅助工具"
+    },
+    "CustomKnightSuperAnimationAddon": {
+        "ChineseName": "自定义骑士超级动画扩展(CustomKnightSuperAnimationAddon)",
+        "Desc": "允许为动画插入自定义精灵表，导出精灵表需使用链接工具：https://github.com/RedFrog6002/sseadv"
+    },
+    "Unity Explorer": {
+        "ChineseName": "Unity浏览器(Unity Explorer)",
+        "Desc": "模组开发者实用工具，可查看并编辑游戏结构"
+    },
+    "Fast Travel": {
+        "ChineseName": "快速旅行(Fast Travel)",
+        "Desc": "点击地图即可传送到圣巢的任意位置"
+    },
+    "Game Object Dump": {
+        "ChineseName": "拆包机(Game Object Dump)",
+        "Desc": "允许从场景中的游戏对象提取图集、精灵与音频片段"
+    },
+    "Gatling Aspid": {
+        "ChineseName": "加特林吸虫(Gatling Aspid)",
+        "Desc": "使原始吸虫（Primal Aspids，敌人名称）装备转轮机枪，提供配置选项"
+    },
+    "Aspid Queen": {
+        "ChineseName": "吸虫女王(Aspid Queen)",
+        "Desc": "在神堂（Hall of Gods）中添加原始吸虫女王（Primal Aspid）Boss战"
+    },
+    "SkipToRadiance": {
+        "ChineseName": "跳至辐光(SkipToRadiance)",
+        "Desc": "使玩家在被辐光（The Radiance）击败后，立即进入第四阶段战斗。该模组适用于练习修改版辐光Boss战，或避免反复与空洞骑士（HK）战斗"
+    },
+    "Toggleable Bindings": {
+        "ChineseName": "可切换绑定(Toggleable Bindings)",
+        "Desc": "允许随时激活/停用神居（Godhome）的单个绑定（Bindings），并便于其他开发者创建自定义绑定"
+    },
+    "HollowPoint": {
+        "ChineseName": "机枪骑士(HollowPoint)",
+        "Desc": "为玩家添加枪械武器，重新设计护符与能力，围绕枪械玩法构建游戏体验，建议开新档"
+    },
+    "Golden Godhome": {
+        "ChineseName": "金色神居(Golden Godhome)",
+        "Desc": "为重制神居（Godhome）中的Boss外观，添加更多金色设计与细节"
+    },
+    "Hall of Gods Extras": {
+        "ChineseName": "神居附加内容(Hall of Gods Extras)",
+        "Desc": "在神堂（Hall of Gods）中添加“空洞骑士”（The Hollow Knight）与“辐光”（The Radiance）Boss"
+    },
+    "Custom Trial": {
+        "ChineseName": "自定义竞技场(Custom Trial)",
+        "Desc": "允许为愚者斗兽场（Colosseum of Fools）创建自定义试炼"
+    },
+    "SilkSong (but not really)": {
+        "ChineseName": "丝之歌（但并非真的）(SilkSong (but not really))",
+        "Desc": "允许玩家操控黄蜂女（Hornet）"
+    },
+    "Discord Rich Presence": {
+        "ChineseName": "Discord联动状态(Discord Rich Presence)",
+        "Desc": "前身为“HollowKnightDRPC”模组，该模组可在你的Discord个人资料（点击用户名时显示）中添加详细的游戏状态"
+    },
+    "Aspidnest": {
+        "ChineseName": "吸虫巢(Aspidnest)",
+        "Desc": "添加多种无法杀死的敌人（如原始吸虫（Primal Aspids）、水晶猎手（Crystal Hunters）、卢德尔（Loodles）、螳螂 Petra（Mantis Petras）、蜂巢士兵（Hive Soldiers）、蜂巢守卫（Hive Guardians）、斯奎特（Squits）、苔藓飞虫（Mossflies）、吸虫飞虱（Flukefeys）、长枪哨兵（Lance Sentries）），这些敌人会在整个圣巢中跟随玩家。该模组可在选项页面中自定义设置"
+    },
+    "Osmi": {
+        "ChineseName": "奥斯米(Osmi)",
+        "Desc": "为其他模组提供实用工具的库模组"
+    },
+    "GodSeekerPlus": {
+        "ChineseName": "寻神者增强(GodSeekerPlus)",
+        "Desc": "多种调整与实用功能，提升神居（Godhome）游玩体验"
+    },
+    "CompanionCloth": {
+        "ChineseName": "伙伴布料(CompanionCloth)",
+        "Desc": "让克洛（Cloth，NPC名称）全程陪伴并与你一同战斗"
+    },
+    "HealthShare": {
+        "ChineseName": "生命值共享(HealthShare)",
+        "Desc": "使部分Boss共享生命值，API部分已迁移至Osmi模组"
+    },
+    "Everwatchers": {
+        "ChineseName": "永恒守望者(Everwatchers)",
+        "Desc": "基于守望者骑士（Watcher Knights）的修改版Boss模组，允许你同时与所有守望者骑士战斗，并可添加更多骑士"
+    },
+    "TribeOfBattle": {
+        "ChineseName": "战斗部落(TribeOfBattle)",
+        "Desc": "基于战斗姐妹（Sisters of Battle）与叛徒领主（Traitor Lord）的修改版Boss模组"
+    },
+    "Crystalblobbles": {
+        "ChineseName": "水晶泡泡(Crystalblobbles)",
+        "Desc": "基于奥blobble（Oblobbles，敌人名称）的修改版Boss模组"
+    },
+    "ContinueCountdown": {
+        "ChineseName": "继续倒计时(ContinueCountdown)",
+        "Desc": "在继续游戏（Continue）时添加倒计时效果"
+    },
+    "CharmPreset": {
+        "ChineseName": "护符预设(CharmPreset)",
+        "Desc": "快速切换整套护符，共有三个预设位"
+    },
+    "DoubleJumpFix": {
+        "ChineseName": "二段跳修复(DoubleJumpFix)",
+        "Desc": "修复“二段跳有时无法正常取消”的常见漏洞"
+    },
+    "No Particles": {
+        "ChineseName": "禁用粒子(No Particles)",
+        "Desc": "禁用大部分粒子效果"
+    },
+    "AlreadyEnoughPlayMaker": {
+        "ChineseName": "足够的PlayMaker(AlreadyEnoughPlayMaker)",
+        "Desc": "针对PlayMaker有限状态机（FSMs）的优化模组"
+    },
+    "WebPCodec": {
+        "ChineseName": "WebP 格式支持(WebPCodec)",
+        "Desc": "为Texture2D添加WebP格式编码支持"
+    },
+    "FLACCodec": {
+        "ChineseName": "FLAC解码器(FLACCodec)",
+        "Desc": "为AudioClip添加FLAC格式编码支持"
+    },
+    "Vanilla Map Mod": {
+        "ChineseName": "原版地图模组(Vanilla Map Mod)",
+        "Desc": "在现有地图上添加所有物品/位置标记"
+    },
+    "GeoHunger": {
+        "ChineseName": "吉欧饥饿(GeoHunger)",
+        "Desc": "玩家会逐渐损失吉欧（Geo），吉欧为0时会逐渐损失生命值"
+    },
+    "Pantheons Hit Counter": {
+        "ChineseName": "万神殿受击计数器(Pantheons Hit Counter)",
+        "Desc": "自动统计万神殿（Pantheons）战斗中的攻击命中次数"
+    },
+    "Hit Counter": {
+        "ChineseName": "击中计数(Hit Counter)",
+        "Desc": "允许创建自定义计数器，统计攻击命中次数"
+    },
+    "DoubleRadiance": {
+        "ChineseName": "双重光辉(DoubleRadiance)",
+        "Desc": "可同时与两个辐光（Radiance）战斗，它们共享生命值"
+    },
+    "CustomImage": {
+        "ChineseName": "自定义图像(CustomImage)",
+        "Desc": "允许修改部分精灵图像"
+    },
+    "ThecurseofSly": {
+        "ChineseName": "斯莱的诅咒(ThecurseofSly)",
+        "Desc": "获取吉欧（Geo）时，玩家会受到伤害或死亡"
+    },
+    "FuryMod": {
+        "ChineseName": "愤怒模组(FuryMod)",
+        "Desc": "装备“陨落暴怒”（Fury of the Fallen）护符时，玩家生命值固定为1，且可正常使用该护符"
+    },
+    "ReverseKnight": {
+        "ChineseName": "反向骑士(ReverseKnight)",
+        "Desc": "骑士（Knight）的外观会变得有些奇怪……"
+    },
+    "Fragile Purse": {
+        "ChineseName": "易碎钱包(Fragile Purse)",
+        "Desc": "使玩家受到攻击时掉落吉欧（Geo），并可设置“无吉欧时受到攻击即死亡”的选项"
+    },
+    "DeathCounter": {
+        "ChineseName": "死亡计数器(DeathCounter)",
+        "Desc": "一款酷炫的死亡计数器模组"
+    },
+    "DecorationMaster": {
+        "ChineseName": "装饰大师(DecorationMaster)",
+        "Desc": "通过添加尖刺与锯片使区域难度提升的模组"
+    },
+    "HKTracker": {
+        "ChineseName": "状态显示(HKTracker)",
+        "Desc": "跟踪玩家数据，最常用于直播时显示玩家拥有的能力/护符"
+    },
+    "FragileStrengthForNailArts": {
+        "ChineseName": "力量剑技(FragileStrengthForNailArts)",
+        "Desc": "允许“脆弱力量”（Fragile Strength）/“不可破坏力量”（Unbreakable Strength）护符提升钉子技艺（Nail Art）的伤害，该功能最初由TTacco开发"
+    },
+    "ParryKnight": {
+        "ChineseName": "拼刀骑士(ParryKnight)",
+        "Desc": "可壁反（Parry）的敌人仅会受到壁反伤害，其他敌人仅会受到法术伤害"
+    },
+    "PaperKnight": {
+        "ChineseName": "纸片骑士(PaperKnight)",
+        "Desc": "物体转向时，精灵会呈现“纸张旋转”的动画效果"
+    },
+    "Abskoth": {
+        "ChineseName": "无敌马克斯(Abskoth)",
+        "Desc": "玩法模组，在绝对辐光（Absolute Radiance）Boss战中添加无敌的马可斯（Markoths）"
+    },
+    "QuirrelBoat": {
+        "ChineseName": "奎若的船(QuirrelBoat)",
+        "Desc": "使奎若（Quirrel）在蓝湖（Blue Lake）事件后仍可互动的模组"
+    },
+    "BingoBoard": {
+        "ChineseName": "宾果面板(BingoBoard)",
+        "Desc": "游戏内宾果棋盘显示模组"
+    },
+    "HKTool Legacy": {
+        "ChineseName": "旧版HKTool(HKTool Legacy)",
+        "Desc": "库模组，已停止维护！**若该模组导致游戏崩溃，属于正常现象，原因未知**"
+    },
+    "HKTool": {
+        "ChineseName": "HKTool(HKTool)",
+        "Desc": "库模组，不支持Linux系统"
+    },
+    "Nosk God": {
+        "ChineseName": "诺斯克神明(Nosk God)",
+        "Desc": ""
+    },
+    "ShieldParry": {
+        "ChineseName": "盾牌格挡(ShieldParry)",
+        "Desc": "允许玩家在游戏中使用盾牌"
+    },
+    "Backdash": {
+        "ChineseName": "后空翻(Backdash)",
+        "Desc": "允许玩家在游戏中使用后跳（Back Dash）"
+    },
+    "ChangeHud": {
+        "ChineseName": "更改魂槽(ChangeHud)",
+        "Desc": "更改你的魂槽样式（普通、钢魂、寻神者）"
+    },
+    "QuirrelFlower": {
+        "ChineseName": "奎若送花(QuirrelFlower)",
+        "Desc": "给奎若（Quirrel）的一份小礼物"
+    },
+    "UnityExplorerPlus": {
+        "ChineseName": "Unity浏览器增强版(UnityExplorerPlus)",
+        "Desc": "为UnityExplorer添加额外功能的模组"
+    },
+    "Dead Cells Barrel Launcher": {
+        "ChineseName": "死亡细胞木桶发射器(Dead Cells Barrel Launcher)",
+        "Desc": "将骑士（Knight）的武器替换为“木桶发射器”（Barrel Launcher，源自《死亡细胞》）"
+    },
+    "HKTimer": {
+        "ChineseName": "HK计时器(HKTimer)",
+        "Desc": "适用于1.5版本的游戏内计时器模组"
+    },
+    "SeedSummon": {
+        "ChineseName": "种子召唤(SeedSummon)",
+        "Desc": "可召唤生命种子（Life Seed）的模组"
+    },
+    "Negative Nail": {
+        "ChineseName": "逆向骨钉(Negative Nail)",
+        "Desc": "使钉子（nail）造成负伤害（即治疗敌人），迫使玩家依赖法术战斗。建议搭配“Enemy HP Bar”（敌人生命值条）模组使用"
+    },
+    "DumbEnemy": {
+        "ChineseName": "全部敌人隐身(DumbEnemy)",
+        "Desc": "使敌人及其攻击效果隐形"
+    },
+    "CountDownForLife": {
+        "ChineseName": "死亡倒计时(CountDownForLife)",
+        "Desc": "倒计时归零时，玩家会受到惩罚"
+    },
+    "CustomJournal": {
+        "ChineseName": "自定义日志(CustomJournal)",
+        "Desc": "自定义骑士（Custom Knight）的附加模组，用于自定义日志（Journal）图像"
+    },
+    "Dead Cells The Queen": {
+        "ChineseName": "死亡细胞女王(Dead Cells The Queen)",
+        "Desc": "该模组已废弃且停止维护，请使用“Dead Cells Bosses”模组"
+    },
+    "Dead Cells Bosses": {
+        "ChineseName": "死亡细胞BOSS(Dead Cells Bosses)",
+        "Desc": "将《死亡细胞》（Dead Cells）中的Boss添加到《空洞骑士》中"
+    },
+    "Dead Cells Time Keeper": {
+        "ChineseName": "死亡细胞时间守护者(Dead Cells Time Keeper)",
+        "Desc": "添加“时光守护者”（Time Keeper，源自《死亡细胞》）雕像"
+    },
+    "ShadeControl": {
+        "ChineseName": "控制阴影(ShadeControl)",
+        "Desc": "调试扩展模组（DebugAddition），允许控制暗影法术（Shade Spell）"
+    },
+    "CustomAudio": {
+        "ChineseName": "自定义音频(CustomAudio)",
+        "Desc": "可替换《空洞骑士》部分音频的模组"
+    },
+    "Zote Killer": {
+        "ChineseName": "佐特杀手(Zote Killer)",
+        "Desc": "允许在斗兽场（Colosseum）中杀死佐特（Zote）"
+    },
+    "Cyclone Throws": {
+        "ChineseName": "旋风投掷(Cyclone Throws)",
+        "Desc": "允许将旋风（Cyclone）作为远程武器投掷"
+    },
+    "Mirrored Hallownest": {
+        "ChineseName": "镜像圣巢(Mirrored Hallownest)",
+        "Desc": "将整个《空洞骑士》地图水平镜像翻转"
+    },
+    "Archipelago": {
+        "ChineseName": "群岛联动(Archipelago)",
+        "Desc": "支持“群岛”（Archipelago）多世界系统的游戏玩法"
+    },
+    "Archipelago Map Mod": {
+        "ChineseName": "群岛地图模组(Archipelago Map Mod)",
+        "Desc": "《RandoMapMod》的改编版本，适用于“群岛”（Archipelago）多世界随机化器"
+    },
+    "GreatChampion": {
+        "ChineseName": "伟大冠军(GreatChampion)",
+        "Desc": "为“失败冠军”（Failed Champion）制作的修改版Boss模组"
+    },
+    "Cyclone Real Combat": {
+        "ChineseName": "真正的拜师(Cyclone Real Combat)",
+        "Desc": "将学习剑技的过场换为真正的战斗"
+    },
+    "OrbTracker": {
+        "ChineseName": "梦点追踪(OrbTracker)",
+        "Desc": "用箭头指向最近的“低语根宝珠”（Whispering Root Orb），并统计已收集的宝珠数量"
+    },
+    "CustomPantheon": {
+        "ChineseName": "自定义圣巢(CustomPantheon)",
+        "Desc": "在神居（God Home）中添加一个额外的Boss门，Boss顺序可由你自行决定"
+    },
+    "HKMP.ModDiff": {
+        "ChineseName": "HKMP.联机模组对比(HKMP.ModDiff)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，用于检查客户端与服务器之间的模组列表差异"
+    },
+    "HKMP.CheckSave": {
+        "ChineseName": "HKMP.存档检查(HKMP.CheckSave)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，用于检查玩家存档"
+    },
+    "RandomCharm": {
+        "ChineseName": "随机护符(RandomCharm)",
+        "Desc": "《空洞骑士》模组，每次切换场景时随机更换你已装备的护符（包括《Transcendence》模组新增的护符）"
+    },
+    "Uumuu Plus": {
+        "ChineseName": "乌姆加强版(Uumuu Plus)",
+        "Desc": "对乌姆（Uumuu）进行小幅增强的模组"
+    },
+    "press g to dab": {
+        "ChineseName": "按G做dab动作(press g to dab)",
+        "Desc": "按G键，骑士（Knight）会做出“ dab ”动作（一种流行手势）"
+    },
+    "Input Buffers": {
+        "ChineseName": "输入缓冲(Input Buffers)",
+        "Desc": "支持为骑士（Knight）的所有动作设置“输入缓冲”（提前输入指令，后续自动执行）"
+    },
+    "PathOfPureVessel": {
+        "ChineseName": "纯粹容器之路(PathOfPureVessel)",
+        "Desc": "在痛苦之路（Path of Pain，简称POP）终点与纯粹容器（Pure Vessel）进行战斗"
+    },
+    "Fennel": {
+        "ChineseName": "茴香(Fennel)",
+        "Desc": "将《莫莫多拉：月下遐想》（Momodora: Reverie Under the Moonlight）中的“茴香”（Fennel）Boss战移植到《空洞骑士》中"
+    },
+    "Propeller Knight": {
+        "ChineseName": "螺旋桨骑士(Propeller Knight)",
+        "Desc": "将《铲子骑士》（Shovel Knight）中的“螺旋桨骑士”（Propeller Knight）添加到《空洞骑士》中"
+    },
+    "Cagney Carnation": {
+        "ChineseName": "卡格尼康乃馨(Cagney Carnation)",
+        "Desc": "《空洞骑士》模组，添加《茶杯头》（Cuphead）中的“卡格尼·卡arnation”（Cagney Carnation）Boss"
+    },
+    "Fake Peppino": {
+        "ChineseName": "披萨塔联动 Boss 假主角(Fake Peppino)",
+        "Desc": "添加《披萨塔》（Pizza Tower）中的“假佩皮诺”（Fake Peppino）Boss"
+    },
+    "Any Radiance 3.0": {
+        "ChineseName": "任何光辉3.0(Any Radiance 3.0)",
+        "Desc": "《Any Radiance 3.0》（辐光修改版Boss战模组）"
+    },
+    "Rando Vanilla Tracker": {
+        "ChineseName": "随机原版追踪器(Rando Vanilla Tracker)",
+        "Desc": "随机化器4（Randomizer 4）的附加模组，用于追踪未被随机化的物品"
+    },
+    "HKMP Tag": {
+        "ChineseName": "HKMP 感染模式(HKMP Tag)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，新增“抓人”（Tag）游戏模式"
+    },
+    "The Glimmering Realm": {
+        "ChineseName": "微光之境(The Glimmering Realm)",
+        "Desc": "新增一种游戏模式，大幅修改圣巢的布局、物品与剧情，打造全新探索世界——“微光领域”（Glimmering Realm）！欢迎加入Discord：https://discord.gg/wP2FFY6uAB"
+    },
+    "Convenient Path of Pain": {
+        "ChineseName": "便捷痛苦之路(Convenient Path of Pain)",
+        "Desc": "击打苦痛之路的灵魂图腾和翅膀傀儡时直接回满魂。目前该功能不适用于钉子技艺（Nail Arts）。"
+    },
+    "Godhome Win Loss Tracker": {
+        "ChineseName": "神居胜负追踪器(Godhome Win Loss Tracker)",
+        "Desc": "在神堂（Hall of Gods）与万神殿（Pantheons）中追踪胜负记录与攻击命中统计"
+    },
+    "Empty Menu": {
+        "ChineseName": "空菜单(Empty Menu)",
+        "Desc": "添加一个空白的菜单界面"
+    },
+    "Brothers of Battle": {
+        "ChineseName": "战斗兄弟(Brothers of Battle)",
+        "Desc": "与“伟大钉子大师斯莱”（Great Nailsage Sly）训练的“战斗兄弟”（Brothers of Battle）战斗"
+    },
+    "Lore Master": {
+        "ChineseName": "剧情大师(Lore Master)",
+        "Desc": "为剧情石板（Lore Tablets）与部分NPC添加特殊能力。与“剧情随机化模组”（Lore Rando）不兼容！若你仅关注随机化位置，建议使用“剧情随机化器”（Lore Randomizer）"
+    },
+    "Bomber Knight": {
+        "ChineseName": "炸弹骑士(Bomber Knight)",
+        "Desc": "添加“炸弹”能力，以及多款新护符与自定义“Boss”"
+    },
+    "KorzUtils": {
+        "ChineseName": "KorzUtils工具库(KorzUtils)",
+        "Desc": "为其他模组提供实用功能的库模组"
+    },
+    "LoreCore": {
+        "ChineseName": "剧情核心(LoreCore)",
+        "Desc": "添加多款与剧情相关的“物品修改器”（Item Changer）位置与物品"
+    },
+    "Lore Randomizer": {
+        "ChineseName": "剧情随机(Lore Randomizer)",
+        "Desc": "随机化器4（Randomizer 4）的连接模组，添加多款与剧情相关的物品与位置"
+    },
+    "Extra Rando": {
+        "ChineseName": "额外随机化(Extra Rando)",
+        "Desc": "随机化器4（Randomizer 4）的连接模组，包含多种杂项设置"
+    },
+    "Arcade Knight": {
+        "ChineseName": "街机骑士(Arcade Knight)",
+        "Desc": "添加多款迷你游戏"
+    },
+    "TheHuntIsOn": {
+        "ChineseName": "狩猎开始(TheHuntIsOn)",
+        "Desc": "用于“猎人追猎”玩法的模组，提供修改“猎人”与“速通者”游戏影响的模块"
+    },
+    "Trial of Crusaders": {
+        "ChineseName": "十字军试炼(Trial of Crusaders)",
+        "Desc": "受《死亡细胞》《以撒的结合》《蓝色王子》启发的“类 Rogue”模组"
+    },
+    "Infection Bomb": {
+        "ChineseName": "感染炸弹(Infection Bomb)",
+        "Desc": "杀死受感染的（或任意）虫子时生成辐光（Radiance）"
+    },
+    "BugPrince": {
+        "ChineseName": "虫王子(BugPrince)",
+        "Desc": "随机化器4（Randomizer 4）的连接模组，将“蓝色王子”（Blue Prince）机制与《空洞骑士》传送随机化结合"
+    },
+    "DarknessRandomizer": {
+        "ChineseName": "黑暗随机化(DarknessRandomizer)",
+        "Desc": "随机附属，随机哪些房间是黑暗的，同时可以把灯笼分裂成四个碎片"
+    },
+    "Mimicpocalypse": {
+        "ChineseName": "模仿灾难(Mimicpocalypse)",
+        "Desc": "为“2025年幼虫日预设种子”（Grub Day 2025 Plando）制作的附加模组"
+    },
+    "MoreDoors": {
+        "ChineseName": "更多门(MoreDoors)",
+        "Desc": "随机化器4（Rando 4）的连接模组，为圣巢添加更多带锁门"
+    },
+    "PurenailCore": {
+        "ChineseName": "纯粹钉子核心(PurenailCore)",
+        "Desc": "“纯粹钉子”（Purenail）系列模组的通用工具与交互库"
+    },
+    "Scattered and Lost": {
+        "ChineseName": "散落与迷失(Scattered and Lost)",
+        "Desc": "《塞莱斯特》（Celeste）主题内容模组，扩展布雷塔的小屋（Bretta's Hut）"
+    },
+    "Sein": {
+        "ChineseName": "Sein(Sein)",
+        "Desc": "为“自定义骑士”（Custom Knight）皮肤“奥日”（Ori）制作的同伴模组，添加专属特效"
+    },
+    "SpicyRando": {
+        "ChineseName": "辣味随机化(SpicyRando)",
+        "Desc": "在随机化器（Rando）的特定部分增加多种难度"
+    },
+    "SpoilerViewerMod": {
+        "ChineseName": "剧透阅读器(SpoilerViewerMod)",
+        "Desc": "提供Java图形界面（GUI），用于浏览随机化器（Randos）或预设种子（Plandos）的剧透日志。需安装Java环境"
+    },
+    "TreasureHunt": {
+        "ChineseName": "寻宝(TreasureHunt)",
+        "Desc": "随机化器4（Randomizer 4）的连接模组，提供“半剧透”模式"
+    },
+    "UnRando": {
+        "ChineseName": "反随机化(UnRando)",
+        "Desc": "随机化器4（Rando 4）的连接模组，修复随机化物品的获取顺序"
+    },
+    "MapChanger": {
+        "ChineseName": "地图更换器(MapChanger)",
+        "Desc": "为地图类模组提供支持的库模组"
+    },
+    "RandoMapMod": {
+        "ChineseName": "随机地图模组(RandoMapMod)",
+        "Desc": "随机化器4（Randomizer 4）的“世界地图”大修模组，帮助玩家寻找物品与传送检查点"
+    },
+    "Twister Indicator": {
+        "ChineseName": "扭曲者指示器(Twister Indicator)",
+        "Desc": "当你可使用“法术旋风”（Spell Twister）护符释放法术时，为灵魂条（Soul Bar）添加灰色色调（可自定义）"
+    },
+    "Carefree Grimm": {
+        "ChineseName": "无忧格林(Carefree Grimm)",
+        "Desc": "允许你同时装备“无忧无虑的旋律”（Carefree Melody）与“格林之子”（Grimmchild）护符"
+    },
+    "Sit Button": {
+        "ChineseName": "坐下按键(Sit Button)",
+        "Desc": "按指定按键即可在任意位置坐下"
+    },
+    "CustomKnightPlus": {
+        "ChineseName": "自定义骑士加强版(CustomKnightPlus)",
+        "Desc": "为“自定义骑士”（Custom Knight）提供“条件皮肤”支持的模组"
+    },
+    "NoSpiders": {
+        "ChineseName": "移除蜘蛛(NoSpiders)",
+        "Desc": "移除“深邃巢穴”（Deepnest）前景中的蜘蛛图像的模组"
+    },
+    "Curse Randomizer": {
+        "ChineseName": "随机诅咒(Curse Randomizer)",
+        "Desc": "随机化器4（Randomizer 4）的连接模组，新增多种“诅咒”选项"
+    },
+    "NoWalkOfShame": {
+        "ChineseName": "不再跑尸(NoWalkOfShame)",
+        "Desc": "使你在死亡房间（跳过黑暗房间/梦境房间/斗兽场）中重生，无需返回灵体位置"
+    },
+    "Always Furious": {
+        "ChineseName": "永久愤怒(Always Furious)",
+        "Desc": "装备“陨落暴怒”（Fury of the Fallen）护符时，该护符效果始终生效"
+    },
+    "Charm Overhaul": {
+        "ChineseName": "护符大修(Charm Overhaul)",
+        "Desc": "将“护符大修”（Charm Overhaul）模组移植到1.5版本，对多款护符进行平衡性调整与机制重制，并新增多种协同效果"
+    },
+    "Charm Changer": {
+        "ChineseName": "护符增强(Charm Changer)",
+        "Desc": "允许你自定义部分护符效果的强度"
+    },
+    "Disable Enemy Geo": {
+        "ChineseName": "禁用敌人吉欧(Disable Enemy Geo)",
+        "Desc": "使敌人不再掉落吉欧（Geo）"
+    },
+    "Dream Warpers": {
+        "ChineseName": "梦境传送者(Dream Warpers)",
+        "Desc": "使戈布（Gorb）、胡长老（Elder Hu）与无眼（No Eyes）在受到伤害后100%触发传送"
+    },
+    "GPZ Precepts": {
+        "ChineseName": "灰色王子佐特戒律(GPZ Precepts)",
+        "Desc": "灰色王子佐特（GPZ）每次受到伤害时会显示一条随机“戒律”（Precept），显示期间佐特处于无敌状态"
+    },
+    "Grimmchild Anywhere": {
+        "ChineseName": "强制启用格林之子(Grimmchild Anywhere)",
+        "Desc": "使格林之子（Grimmchild）可在“格林”（TMG）与“梦魇之王格林”（NKG）Boss战中生成"
+    },
+    "Infinite AbsRad Phases": {
+        "ChineseName": "无限无上阶段(Infinite AbsRad Phases)",
+        "Desc": "使你选择的“绝对辐光”（AbsRad）阶段变为无限循环"
+    },
+    "Menderbug Options": {
+        "ChineseName": "修理虫选项(Menderbug Options)",
+        "Desc": "可自定义“修补虫”（Menderbug）的生成概率、死亡后是否重生，以及是否需要打破标识才能生成"
+    },
+    "Nailmaster's Pride": {
+        "ChineseName": "骨钉大师的骄傲(Nailmaster's Pride)",
+        "Desc": "装备“钉子大师的荣耀”（Nailmaster's Glory）护符时，会禁用普通钉子攻击，但会解锁所有钉子技艺（Nail Arts）并自动蓄力"
+    },
+    "Crafted Town": {
+        "ChineseName": "精致小镇(Crafted Town)",
+        "Desc": "“加入一个新的地点，法术切换，护符升级（测试版）"
+    },
+    "Upgraded DreamShield": {
+        "ChineseName": "梦盾升级(Upgraded DreamShield)",
+        "Desc": "将“梦境护盾”（Dream Shield）改造为类似“弓箭”的武器，可格挡激光"
+    },
+    "DreamShield Coop": {
+        "ChineseName": "梦境护盾联机(DreamShield Coop)",
+        "Desc": "支持2名或3名玩家联机的模组，其他玩家可扮演“梦境护盾”或“格林之子”克隆体。支持其他模组轻松添加更多可扮演角色"
+    },
+    "Boss Attacks": {
+        "ChineseName": "BOSS攻击(Boss Attacks)",
+        "Desc": "在神堂（Hall of Gods）中针对特定Boss攻击进行训练，还包含更多功能"
+    },
+    "Pet": {
+        "ChineseName": "宠物(Pet)",
+        "Desc": "添加可跟随主角的宠物"
+    },
+    "RCPathfinder": {
+        "ChineseName": "随机寻路器(RCPathfinder)",
+        "Desc": "为RandomizerCore提供“路径查找”功能的库模组"
+    },
+    "SlantedKnight": {
+        "ChineseName": "倾斜骑士(SlantedKnight)",
+        "Desc": "骑士（Knight）的倾斜角度会根据生命值变化"
+    },
+    "AspyCompanion": {
+        "ChineseName": "阿斯匹德伙伴(AspyCompanion)",
+        "Desc": "用“阿斯匹德”（Aspy）替换“格林之子”（Grimmchild）"
+    },
+    "Soul Nail on Heavy Blow": {
+        "ChineseName": "重击中的灵魂钉(Soul Nail on Heavy Blow)",
+        "Desc": "装备“沉重打击”（Heavy Blow）护符时，每攻击5次会生成一个“亲属”（Sibling），对附近敌人发动“锋利暗影”（Sharp Shadows）攻击"
+    },
+    "HKRoomLogger": {
+        "ChineseName": "HK房间日志(HKRoomLogger)",
+        "Desc": "将场景传送记录到文件中的模组，是Windows专用软件“HKAT”的配套模组"
+    },
+    "Text Randomizer": {
+        "ChineseName": "文本随机(Text Randomizer)",
+        "Desc": "随机打乱《空洞骑士》中的所有文本内容"
+    },
+    "Disable Achievements": {
+        "ChineseName": "禁用成就(Disable Achievements)",
+        "Desc": "阻止游戏授予成就（包括游戏内成就与所有平台成就，如Steam、GOG等）"
+    },
+    "TheGloryOfBeingAFoolRandomizer": {
+        "ChineseName": "傻瓜的荣耀随机化(TheGloryOfBeingAFoolRandomizer)",
+        "Desc": "随机化“成为傻瓜的荣耀”（The Glory of Being a Fool）相关内容"
+    },
+    "Grass Randomizer": {
+        "ChineseName": "草随机化(Grass Randomizer)",
+        "Desc": "随机化器4（Randomizer 4）的连接模组，将“草”添加到随机化物品与位置池中"
+    },
+    "GrassCore": {
+        "ChineseName": "草核心(GrassCore)",
+        "Desc": "为与“草”相关的活动提供支持的核心模组"
+    },
+    "BingoSync": {
+        "ChineseName": "宾果同步(BingoSync)",
+        "Desc": "《空洞骑士》模组，可自动在bingosync.com网站上标记宾果格子"
+    },
+    "Soul Paladin": {
+        "ChineseName": "灵魂圣骑士(Soul Paladin)",
+        "Desc": "加快“灵魂战士”（Soul Warrior）Boss战节奏并修改其攻击方式的模组"
+    },
+    "NoBlur": {
+        "ChineseName": "无模糊(NoBlur)",
+        "Desc": "“擦亮你的眼镜”——清晰查看《空洞骑士》的背景物体，无模糊效果。提供“移除模糊层”“移除雾效物体”“移除霾效物体”的选项"
+    },
+    "Keep Me Geo": {
+        "ChineseName": "无死亡惩罚(Keep Me Geo)",
+        "Desc": "不想因死亡而承受失去一切的焦虑？“守护我的吉欧”（Keep Me Geo）模组能帮你消除顾虑！死亡时你可自主控制吉欧的损失数量，不再担心失去所有吉欧"
+    },
+    "Stop Hitting Yourself": {
+        "ChineseName": "别打自己了(Stop Hitting Yourself)",
+        "Desc": "骑士（Knight）会变得笨手笨脚（注：暗指骑士会误击自己或出现操作失误）"
+    },
+    "ShyKnight": {
+        "ChineseName": "害羞骑士(ShyKnight)",
+        "Desc": "移除神居（Godhome）竞技场与愚者斗兽场（Colosseum of Fools）中的观众"
+    },
+    "EasySoulRefill": {
+        "ChineseName": "轻松灵魂填充(EasySoulRefill)",
+        "Desc": "玩家重生、坐在长椅上或进入梦境Boss竞技场时，会立即填满灵魂槽（与《苍白法庭》（Pale Court）模组兼容）"
+    },
+    "LessVisualNoise": {
+        "ChineseName": "更少视觉干扰(LessVisualNoise)",
+        "Desc": "减少游戏中的视觉干扰元素，提升 accessibility（无障碍性）。目前仍在开发中，建议搭配“无粒子效果”（No Particles）模组使用"
+    },
+    "Legacy Charm Costs": {
+        "ChineseName": "传统护符成本(Legacy Charm Costs)",
+        "Desc": "将“快速劈砍”（Quick Slash）与“吸虫巢”（Flukenest）护符的槽位消耗恢复为旧版数值（2个槽位）。提供“禁用模组后，已开启存档仍保留修改效果”的选项"
+    },
+    "Static Camera": {
+        "ChineseName": "静态相机(Static Camera)",
+        "Desc": "通过按键绑定将相机固定在某个位置"
+    },
+    "Vessel May Cry": {
+        "ChineseName": "容器鬼泣(Vessel May Cry)",
+        "Desc": "将骑士（Knight）的技能组全面改造为“维吉尔”（Vergil，源自《鬼泣》系列）风格的模组，建议阅读模组页面了解详情"
+    },
+    "AbsRad Configurable Attacks": {
+        "ChineseName": "支持多辐光(AbsRad Configurable Attacks)",
+        "Desc": "可配置“绝对辐光”（Absolute Radiance）各攻击的触发频率，支持同时对多个辐光生效"
+    },
+    "AbsRad Teleport Control": {
+        "ChineseName": "辐光传送控制(AbsRad Teleport Control)",
+        "Desc": "可禁用“绝对辐光”（Absolute Radiance）在“平台阶段”与“最终阶段”的传送位置，支持同时对多个辐光生效"
+    },
+    "Radiance Multiplier": {
+        "ChineseName": "辐光倍数调整(Radiance Multiplier)",
+        "Desc": "支持同时与最多10个“绝对辐光”（Absolute Radiance）战斗，它们共享生命值"
+    },
+    "Steady Hands (automap)": {
+        "ChineseName": "稳定之手（自动地图）(Steady Hands (automap))",
+        "Desc": "“稳定双手”（Steady Hands）——骑士可边走路边绘制地图（无需在长椅休息即可自动更新地图）。与《VanillaMapMod》《RandoMapMod》等其他地图修改模组不兼容（这些模组已包含类似功能）"
+    },
+    "Kindred Spirit": {
+        "ChineseName": "同类精神(Kindred Spirit)",
+        "Desc": "将神居（Godhome）中的“巨型苔藓冲锋者”（Massive Mosscharger）雕像替换为“绿径容器”（Greenpath Vessel）的“梦境版”与“非梦境版”"
+    },
+    "Fart Knight": {
+        "ChineseName": "屁骑士(Fart Knight)",
+        "Desc": "添加“放屁攻击”（Fart Attack）"
+    },
+    "ImmortalLight": {
+        "ChineseName": "不朽之光(ImmortalLight)",
+        "Desc": "为“绝对辐光”（Absolute Radiance）制作的修改版Boss模组"
+    },
+    "LostFocus": {
+        "ChineseName": "迷失焦点(LostFocus)",
+        "Desc": "切换窗口标签页时，自动暂停游戏并静音的模组"
+    },
+    "HKViz": {
+        "ChineseName": "HKViz可视化工具(HKViz)",
+        "Desc": "记录玩家移动、死亡、已装备护符、使用能力等多种数据的模组，支持在hkviz.org网站上可视化这些数据"
+    },
+    "Nightmare and Void": {
+        "ChineseName": "噩梦与虚空(Nightmare and Void)",
+        "Desc": "将“梦魇之王格林”（Nightmare King Grimm）Boss战改造为“格林+纯粹容器”的自定义双人Boss战"
+    },
+    "CarThingMod": {
+        "ChineseName": "车载模组(CarThingMod)",
+        "Desc": "玩家每次挥舞钉子（nail）时，会投掷一辆汽车"
+    },
+    "Deez Nuts Mod": {
+        "ChineseName": "Deez Nuts模组(Deez Nuts Mod)",
+        "Desc": "将游戏中所有文本替换为“Deez Nuts”（英文网络梗，无实际意义，常用于玩笑）"
+    },
+    "HallOfGodsRandomizer": {
+        "ChineseName": "神居随机化(HallOfGodsRandomizer)",
+        "Desc": "已废弃，建议使用“Godhome Randomizer”——一款用于神堂（Hall of Gods）Boss的随机化器附加模组"
+    },
+    "CombatRandomizer": {
+        "ChineseName": "战斗随机化(CombatRandomizer)",
+        "Desc": "为“诅咒式战斗体验”设计的随机化器附加模组"
+    },
+    "FlowerRandomizer": {
+        "ChineseName": "花朵随机化(FlowerRandomizer)",
+        "Desc": "专为“花朵任务爱好者”设计的《空洞骑士》随机化器附加模组"
+    },
+    "GodhomeRandomizer": {
+        "ChineseName": "神居随机化(GodhomeRandomizer)",
+        "Desc": "用于神居（Godhome）元素的随机化器附加模组"
+    },
+    "GrubSpoiler": {
+        "ChineseName": "幼虫剧透(GrubSpoiler)",
+        "Desc": "在“精简剧透日志”（CondensedSpoilerLog）中添加“幼虫（Grubs）”相关信息的模组"
+    },
+    "CelesteDash": {
+        "ChineseName": "塞莱斯廷冲刺(CelesteDash)",
+        "Desc": "将《塞莱斯特》（Celeste）风格的冲刺系统引入《空洞骑士》"
+    },
+    "RecentItemsDisplayNoGrass": {
+        "ChineseName": "无草最近(RecentItemsDisplayNoGrass)",
+        "Desc": "“最近物品显示”（RecentItemsDisplay）模组的衍生版本，不显示“草”（Grass）相关拾取物（适配“草随机化”（GrassRando）模组）"
+    },
+    "LockResolution": {
+        "ChineseName": "锁定分辨率(LockResolution)",
+        "Desc": "在游戏过程中锁定分辨率，切换窗口标签页时启用垂直同步（VSync）"
+    },
+    "MapSyncMod": {
+        "ChineseName": "地图同步模组(MapSyncMod)",
+        "Desc": "在“物品同步模组”（ItemSyncMOD）中同步地图、长椅、战斗、Boss、杠杆、墙壁、地板、门等元素的状态"
+    },
+    "BenchDeploy": {
+        "ChineseName": "长椅部署(BenchDeploy)",
+        "Desc": "通过手柄/键盘部署多个长椅，其他玩家可在“物品同步模组”（ItemSync）与“地图同步模组”（MapSyncMod）中使用这些长椅"
+    },
+    "MetalPipeHM": {
+        "ChineseName": "金属管HM(MetalPipeHM)",
+        "Desc": "《空洞骑士》模组，玩家每次挥舞钉子（nail）时，会播放“金属管道掉落”的音效"
+    },
+    "Soul Sovereign": {
+        "ChineseName": "灵魂君主(Soul Sovereign)",
+        "Desc": "重制“灵魂暴君”（Soul Tyrant）Boss战，提升战斗挑战性的模组"
+    },
+    "LessHealing": {
+        "ChineseName": "更少治疗(LessHealing)",
+        "Desc": "《空洞骑士》模组，提供可切换选项，移除游戏中的多种治疗方式"
+    },
+    "AccessRandomizer": {
+        "ChineseName": "随机化插件(AccessRandomizer)",
+        "Desc": "用于多种“访问检查点”的随机化器附加模组"
+    },
+    "Moonside": {
+        "ChineseName": "月面(Moonside)",
+        "Desc": "“是”即是“否”，“否”即是“是”——在“月面”（Moonside）中，一切都合乎情理（注：玩文字反转梗，对应模组的“逻辑反转”主题）"
+    },
+    "UnrestrictedSteelSoul": {
+        "ChineseName": "无限制钢铁之魂(UnrestrictedSteelSoul)",
+        "Desc": "《空洞骑士》模组，在“钢铁之魂”（Steel Soul）模式中，使“梦境/神居区域”也启用“永久死亡”（Permadeath）规则"
+    },
+    "BossSync": {
+        "ChineseName": "BOSS同步(BossSync)",
+        "Desc": "该模组现已过时，其功能已整合到另一款模组（MapSyncMod）中。目前正在开发另一款模组，用于优化“112%联机APB速通”的细节，后续将以“SpeedrunSync”为名发布"
+    },
+    "Afterimage Plus": {
+        "ChineseName": "残影加强版(Afterimage Plus)",
+        "Desc": "为骑士（Knight）与敌人添加可自定义“残影效果”的模组"
+    },
+    "RemoveLaggyObjects": {
+        "ChineseName": "移除卡顿物体(RemoveLaggyObjects)",
+        "Desc": "从可能导致严重卡顿的场景中移除多种物体"
+    },
+    "Biblically Accurate Lasers": {
+        "ChineseName": "圣经级精准激光(Biblically Accurate Lasers)",
+        "Desc": "为“辐光”（Radiance）与“绝对辐光”（Absolute Radiance）Boss战添加可配置的激光攻击"
+    },
+    "FriendCore": {
+        "ChineseName": "朋友核心(FriendCore)",
+        "Desc": "具备“敌人编辑功能”的实验性（但稳定）库模组"
+    },
+    "The H.I.V.E": {
+        "ChineseName": "蜂巢(The H.I.V.E)",
+        "Desc": "使“蜂巢”（Hive）区域难度小幅提升，并添加新剧情的模组！还包含经典修改版Boss“巴兹博”（Buzzbo）的最新版本。不强制要求搭配“EnemyHPBar”（敌人生命值条）与“HueShifter”（色调切换）模组使用，但建议搭配以获得更佳体验。该模组是《空洞骑士》系列模组的第一部分"
+    },
+    "CollectorGlitchRemover": {
+        "ChineseName": "收藏家漏洞修复器(CollectorGlitchRemover)",
+        "Desc": "修复“收藏家”（Collector）的“瞬间抓取”（insta-grab）与“粘脚”（sticky feet）漏洞"
+    },
+    "Casino Knight": {
+        "ChineseName": "赌场骑士(Casino Knight)",
+        "Desc": "来赌博吧！在德特茅斯（Dirtmouth）添加一家带老虎机的赌场，可消耗吉欧（Geo）参与游戏，赢取丰厚奖励！"
+    },
+    "Rogue": {
+        "ChineseName": "流氓(Rogue)",
+        "Desc": "“类 Rogue”风格的“圣巢万神殿”（Pantheon of Hallownest）模组"
+    },
+    "SpellChanger": {
+        "ChineseName": "法术更换器(SpellChanger)",
+        "Desc": "为其他模组提供“法术与钉子技艺编辑功能”的库模组，简化编辑流程"
+    },
+    "ExtraSpells": {
+        "ChineseName": "额外法术(ExtraSpells)",
+        "Desc": "新增多款法术（及1种类似钉子技艺的技能）的模组，可在背包中选择法术进行切换"
+    },
+    "Charm Changer Rando": {
+        "ChineseName": "护符更换器随机化(Charm Changer Rando)",
+        "Desc": "随机化“护符修改器”（Charm Changer）设置的模组"
+    },
+    "QuickDive": {
+        "ChineseName": "快速下冲(QuickDive)",
+        "Desc": "将“快速施法”（Quick Cast）按键重新映射为仅触发“下潜”（Dive）技能的模组"
+    },
+    "Godhome Elo Counter": {
+        "ChineseName": "神居Elo计数器(Godhome Elo Counter)",
+        "Desc": "为神居（Godhome）添加“ELO等级分系统”（常用于竞技游戏的排名系统）的模组"
+    },
+    "Christmas In Dirtmouth": {
+        "ChineseName": "德特茅斯的圣诞节(Christmas In Dirtmouth)",
+        "Desc": "德特茅斯（Dirtmouth）充满节日气息啦！该模组在德特茅斯添加一家新的圣诞装饰商店，店主是新NPC“梅里维斯普”（Merrywisp）。节日快乐！"
+    },
+    "Hivesong": {
+        "ChineseName": "蜂巢之歌(Hivesong)",
+        "Desc": "该模组新增一款护符“蜂巢之歌”（Hivesong），可提升宠物造成的伤害"
+    },
+    "CharmPatch": {
+        "ChineseName": "护符补丁(CharmPatch)",
+        "Desc": "包含多款小幅修改的集合模组，旨在优化游戏中部分护符的平衡性。建议查看Readme文件，了解对“护符修改器”（Charm Changer）模组的推荐设置"
+    },
+    "ouchyGrass": {
+        "ChineseName": "刺痛的草(ouchyGrass)",
+        "Desc": "触碰草会使玩家受到伤害或死亡"
+    },
+    "AllHallownestEnhanced": {
+        "ChineseName": "全霍尔温斯特增强(AllHallownestEnhanced)",
+        "Desc": "全面增强整个圣巢的模组，我耗时2个半月制作完成。该模组会让你先体验到与“空洞骑士”（Hollow Knight）战斗的乐趣，希望能成为《丝之歌》（SilkSong）发布前的优质替代内容"
+    },
+    "LumaflyKnight": {
+        "ChineseName": "萤火虫骑士(LumaflyKnight)",
+        "Desc": "跟踪并显示你释放的“ lumafly ”（发光飞虫）数量"
+    },
+    "FasterIntroSkip": {
+        "ChineseName": "更快开场跳过(FasterIntroSkip)",
+        "Desc": "加快“跳过开场过场动画”的速度"
+    },
+    "Screensaver": {
+        "ChineseName": "屏幕保护程序(Screensaver)",
+        "Desc": "在游戏界面上方添加屏幕保护程序效果"
+    },
+    "BossStatueFramework": {
+        "ChineseName": "BOSS雕像框架(BossStatueFramework)",
+        "Desc": "用于在神堂（Hall of Gods）中添加自定义Boss雕像的库模组"
+    },
+    "SpeedChanger": {
+        "ChineseName": "速度更换器(SpeedChanger)",
+        "Desc": "可加快或减慢游戏速度的模组，是“Sanic”模组的升级版，支持更多自定义设置且更易用"
+    },
+    "GearSwitcher": {
+        "ChineseName": "装备切换器(GearSwitcher)",
+        "Desc": "允许切换预设装备方案，还可随时切换护符的修改模组"
+    },
+    "ReplayLogger": {
+        "ChineseName": "回放日志(ReplayLogger)",
+        "Desc": "“ReplayLoger”（回放记录器）是一款用于验证玩家挑战跑（Challenge Runs）合法性的模组"
+    },
+    "SafeGodseekerQoL": {
+        "ChineseName": "防QoL模组干扰(SafeGodseekerQoL)",
+        "Desc": "对“挑战跑玩家”有用的模组，可避免其跑图进度被“生活质量优化模组”（QoL Mods）意外影响"
+    },
+    "Fishing": {
+        "ChineseName": "钓鱼(Fishing)",
+        "Desc": "为随机化器（Randomizer）添加“钓鱼迷你游戏”的模组"
+    },
+    "RomanNumerals": {
+        "ChineseName": "罗马数字(RomanNumerals)",
+        "Desc": "将游戏中所有数字转换为罗马数字显示"
+    },
+    "DivineFury": {
+        "ChineseName": "神圣愤怒(DivineFury)",
+        "Desc": "该模组新增一款护符“神圣暴怒”（Divine Fury），装备后玩家生命值固定为1，使“陨落暴怒”（Fury of the Fallen）护符在“光辉神居”（Radiant Godhome）战斗中可正常使用"
+    },
+    "Silksong-Start-Screen": {
+        "ChineseName": "丝之歌-启动界面(Silksong-Start-Screen)",
+        "Desc": "《空洞骑士》模组，将游戏标题界面替换为《丝之歌》（SilkSong）主题。目前该版本仅替换Logo，未替换背景（主要因缺乏高质量资源）。为获得最佳视觉匹配效果，建议搭配“格林”（Grimm）风格背景使用"
+    },
+    "RandoMapCore": {
+        "ChineseName": "随机地图核心(RandoMapCore)",
+        "Desc": "为“RandoMapMod”与“ArchipelagoMapMod”提供支持的库模组"
+    },
+    "Smart Nail": {
+        "ChineseName": "智能钉子(Smart Nail)",
+        "Desc": "“RandoPlus”模组的生活质量优化模组，可在神居（Godhome）与梦境Boss战中自动升级你的钉子（nail）。与“战斗随机化”（Combat Rando）或“诅咒随机化”（Curse Rando）模组不兼容"
+    },
+    "Pure Vessel Skills": {
+        "ChineseName": "纯粹容器技能(Pure Vessel Skills)",
+        "Desc": "允许你使用“纯粹容器”（Pure Vessel）的攻击技能"
+    },
+    "Zen Charm": {
+        "ChineseName": "禅护符(Zen Charm)",
+        "Desc": "新增一款护符“禅意护符”（Zen Charm），装备后无需在长椅旁即可更换其他护符"
+    },
+    "Silksong Healing": {
+        "ChineseName": "丝之歌治疗(Silksong Healing)",
+        "Desc": "新增一款名为“灵魂爆发”（Soulburst）的护符，玩家拥有99点灵魂时可立即恢复3个面具，类似《丝之歌》（SilkSong）的治疗机制"
+    },
+    "Mask Remover": {
+        "ChineseName": "面具移除器(Mask Remover)",
+        "Desc": "从HUD界面中移除“面具”（生命值）显示，对“光辉”（Radiant）难度战斗有用"
+    },
+    "Geo Remover": {
+        "ChineseName": "吉欧移除器(Geo Remover)",
+        "Desc": "从HUD界面中移除“吉欧”（Geo）图标显示"
+    },
+    "Invulnerability Indicator": {
+        "ChineseName": "无敌指示器(Invulnerability Indicator)",
+        "Desc": "在“屏幕过渡”“主动无敌”“已有视觉提示的无敌”之外的场景中，为玩家角色添加“无敌状态视觉提示”"
+    },
+    "Collision Glitch Remover": {
+        "ChineseName": "碰撞漏洞修复器(Collision Glitch Remover)",
+        "Desc": "修复多种“碰撞相关漏洞”，例如“格鲁兹之母穿墙弹跳”（Gruz Mother Wall Bounce）与“收藏家粘脚”（Collector Sticky Feet）漏洞。修复逻辑与“CollectorGlitchRemover”一致，但支持所有场景。可与“CollectorGlitchRemover”同时启用，或替代该模组使用"
+    },
+    "RainbowShinies": {
+        "ChineseName": "彩虹闪光(RainbowShinies)",
+        "Desc": "使所有“闪光拾取物”（Shinies，如吉欧、精华等）呈现随机颜色"
+    },
+    "Architect": {
+        "ChineseName": "建筑师(Architect)",
+        "Desc": "关卡编辑器模组，通过游戏内关卡编辑器与关卡分享功能，允许你添加或移除平台、敌人等元素，自定义《空洞骑士》内容"
+    },
+    "ConfigurableMaskDamage": {
+        "ChineseName": "可配置面具伤害(ConfigurableMaskDamage)",
+        "Desc": "修改骑士（Knight）受到的伤害数值"
+    },
+    "ExaltationExpanded": {
+        "ChineseName": "升华扩展(ExaltationExpanded)",
+        "Desc": "由Xhuis创作、Théodore移植/更新的《Exaltation》模组的粉丝制作补充模组"
+    },
+    "CustomizableNailDamage": {
+        "ChineseName": "可定制钉子伤害(CustomizableNailDamage)",
+        "Desc": "占位模组，需直接安装依赖模组“CustomizableAbilities”"
+    },
+    "CustomizableAbilities": {
+        "ChineseName": "可定制能力(CustomizableAbilities)",
+        "Desc": "允许自定义能力数值的模组：支持设置“负数值/分数值钉子伤害”；调整“钉子攻击获取的灵魂量”“钉子攻击冷却时间”；修改“梦钉伤害（也支持负数值/分数值）”“梦钉获取的灵魂量”；还可调整法术及其他能力数值。负数值伤害会治疗敌人"
+    },
+    "HK_QoLTeleportKit": {
+        "ChineseName": "便捷传送工具包(HK_QoLTeleportKit)",
+        "Desc": "占位模组，需直接安装依赖模组“QoLTeleportKit”"
+    },
+    "QoLTeleportKit": {
+        "ChineseName": "便捷传送(QoLTeleportKit)",
+        "Desc": "生活质量优化传送工具包”（QoL Teleport Kit）是一款《空洞骑士》模组，添加便捷的传送系统"
+    },
+    "WanderersWisdom": {
+        "ChineseName": "漫游者智慧(WanderersWisdom)",
+        "Desc": "新增两款护符的模组：“漫游者的智慧”（Wanderer's Wisdom）与“漫游者的狡诈”（Wanderer's Guile）"
+    },
+    "DashChanger": {
+        "ChineseName": "冲刺更换器(DashChanger)",
+        "Desc": "允许调整冲刺（Dash）的水平与垂直距离"
+    },
+    "PlatformingQoL": {
+        "ChineseName": "跳跃体验优化(PlatformingQoL)",
+        "Desc": "《空洞骑士》平台跳跃玩法的生活质量优化模组，包含“碰撞箱可视化”“跳过重生动画”等功能"
+    },
+    "ShowHPOnDeath": {
+        "ChineseName": "死亡时显示生命值(ShowHPOnDeath)",
+        "Desc": "允许在死亡后查看敌人剩余生命值的模组"
+    },
+    "OWO_HollowKnight": {
+        "ChineseName": "OWO_空洞骑士(OWO_HollowKnight)",
+        "Desc": "支持“OWO Skin”触觉设备与《空洞骑士》联动的模组"
+    },
+    "EnchantedMask": {
+        "ChineseName": "附魔面具(EnchantedMask)",
+        "Desc": "新增名为“符文”（Glyphs）的强化道具，可从“面具制作者”（Mask Maker）处购买"
+    },
+    "MetalOST": {
+        "ChineseName": "金属原声(MetalOST)",
+        "Desc": "将圣巢的所有原声音乐（OST）替换为由RYS制作的自定义金属风格版本"
+    },
+    "DPSMeter": {
+        "ChineseName": "DPS计量器(DPSMeter)",
+        "Desc": "显示“每秒伤害”（DPS）的模组，也支持显示负数值伤害"
+    },
+    "Pale Court Charms": {
+        "ChineseName": "苍白法庭护符(Pale Court Charms)",
+        "Desc": "添加《苍白法庭》（Pale Court）模组中的护符，旨在解决部分模组与《苍白法庭》主模组不兼容的问题，可与“随机化器”(Randomizer)和“Transcendence”模组搭配使用"
+    },
+    "HKMP.VoiceChat": {
+        "ChineseName": "HKMP.语音聊天(HKMP.VoiceChat)",
+        "Desc": "《空洞骑士》多人联机模组（HKMP）的附加组件，添加（基于距离的）语音聊天功能，需安装OpenAL（https://www.openal.org/）才能使用"
+    },
+    "MotionBlur": {
+        "ChineseName": "动态模糊(MotionBlur)",
+        "Desc": "为游戏添加运动模糊效果"
+    },
+    "Less Flashing Lights": {
+        "ChineseName": "更少闪烁灯光(Less Flashing Lights)",
+        "Desc": "减少游戏中的闪光效果数量，更多信息请查看readme文件"
+    },
+    "Galien Illusionist": {
+        "ChineseName": "加连幻术师(Galien Illusionist)",
+        "Desc": "修改版Boss模组，竞技场中会出现两个“加连”（Galien），其中一个是虚影"
+    },
+    "DanielSteginkUtils": {
+        "ChineseName": "DanielStegink工具库(DanielSteginkUtils)",
+        "Desc": "包含计算工具、逻辑处理与跨模组辅助功能的自定义库模组"
+    },
+    "PantheonOfRegions": {
+        "ChineseName": "区域圣巢(PantheonOfRegions)",
+        "Desc": "新增“区域万神殿”（Pantheon of Regions），可在其中与各区域Boss一同战斗"
+    },
+    "PowerfulShadowDash": {
+        "ChineseName": "强力阴影冲刺(PowerfulShadowDash)",
+        "Desc": "占位模组，需直接安装依赖模组“Powerful Shadow Dash”"
+    },
+    "Powerful Shadow Dash": {
+        "ChineseName": "强力阴影冲刺(Powerful Shadow Dash)",
+        "Desc": "该模组将“暗影冲刺”（Shadow Dash）的冷却时间设置为0"
+    },
+    "Custom Title": {
+        "ChineseName": "自定义标题(Custom Title)",
+        "Desc": "允许玩家使用自定义标题的《空洞骑士》模组"
+    },
+    "Nail Destroy Bullet": {
+        "ChineseName": "钉子摧毁子弹(Nail Destroy Bullet)",
+        "Desc": "挥舞钉子（nail）时可摧毁敌人发射的子弹"
+    },
+    "Dash Slash Plus": {
+        "ChineseName": "冲刺斩强化(Dash Slash Plus)",
+        "Desc": "移除冲刺斩的蓄力要求"
+    },
+    "Shade Lord": {
+        "ChineseName": "暗影领主(Shade Lord)",
+        "Desc": "在神堂（Hall of Gods）中新增 “暗影领主” 作为可挑战的 Boss"
+    },
+    "Killable Dreamnail": {
+        "ChineseName": "致命梦钉(Killable Dreamnail)",
+        "Desc": "新增一款名为 “锯齿梦魂”（Serrated Dream）的护符，装备后可使用梦钉造成伤害，伤害数值取决于你拥有的精华数量"
+    },
+    "More Charm Notches": {
+        "ChineseName": "更多护符槽(More Charm Notches)",
+        "Desc": "将护符槽数量翻倍，初始护符槽从 3 个变为 6 个，且每找到 1 个额外的护符槽道具，将额外获得 2 个护符槽"
+    },
+    "Uneated Grubs": {
+        "ChineseName": "未被吞噬的幼虫(Uneated Grubs)",
+        "Desc": "让幼虫们留在幼虫之家（Grubhome），不会被幼虫爷爷（Grubfather）吞噬"
+    },
+    "Hide Dialog Text": {
+        "ChineseName": "隐藏对话文本(Hide Dialog Text)",
+        "Desc": "按 F3 键可切换对话文本的显示状态（显示 / 隐藏）"
+    },
+    "MarkothShield": {
+        "ChineseName": "马尔科特之盾(MarkothShield)",
+        "Desc": "该模组将 “梦境护盾”（Dreamshield）升级为 “马尔科特之盾”（Markoth Shield）"
+    },
+    "AlwaysHazardRespawn": {
+        "ChineseName": "死亡附近重生(AlwaysHazardRespawn)",
+        "Desc": "这个模组强制你在死亡后总是在附近重生，该模组强制所有死亡场景（包括 Boss 战、普通敌人击杀等）均使用此类复活点，让玩家复活位置更靠近死亡地点，减少跑图距离。"
+    }
+    
+}
