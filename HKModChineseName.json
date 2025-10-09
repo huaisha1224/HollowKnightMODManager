@@ -4,8 +4,12 @@
         "Desc": "专为 “U 宇宙”（U-tale）打造并供其使用的工具集合"
     },
     "Charm ReValance": {
-        "ChineseName": "护符重平衡(Charm ReValance)",
-        "Desc": "对护符与能力进行全面调整及自定义，（注：“Charm” 在此处特指《空洞骑士》等游戏中可装备的 “护符” 道具，“overhaul” 指对原有护符效果、能力机制的深度优化，“customization” 支持玩家根据玩法需求调整护符属性或能力参数，例如修改护符所需槽位、增强 / 削弱技能效果等，适配不同战斗流派或难度需求，让护符与能力搭配更灵活）。"
+        "ChineseName": "占位模组护符重平衡(Charm ReValance)",
+        "Desc": "占位模组。请直接安装依赖模组 “CharmReValance”。"
+    },
+    "CharmReValance": {
+        "ChineseName": "护符重平衡(CharmReValance)",
+        "Desc": "对护符与能力进行全面调整及自定义"
     },
     "MyHK": {
         "ChineseName": "体验增强模组(MyHK)",
@@ -1608,7 +1612,7 @@
         "Desc": "《塞莱斯特》（Celeste）主题内容模组，扩展布雷塔的小屋（Bretta's Hut）"
     },
     "Sein": {
-        "ChineseName": "Sein(Sein)",
+        "ChineseName": "奥日的发光精灵(Sein)",
         "Desc": "为“自定义骑士”（Custom Knight）皮肤“奥日”（Ori）制作的同伴模组，添加专属特效"
     },
     "SpicyRando": {
@@ -2218,6 +2222,18 @@
     "AlwaysHazardRespawn": {
         "ChineseName": "死亡附近重生(AlwaysHazardRespawn)",
         "Desc": "这个模组强制你在死亡后总是在附近重生，该模组强制所有死亡场景（包括 Boss 战、普通敌人击杀等）均使用此类复活点，让玩家复活位置更靠近死亡地点，减少跑图距离。"
+    },
+    "LaughMod": {
+        "ChineseName": "笑声模组(LaughMod)",
+        "Desc": "在特定事件中播放笑声"
+    },
+    "DamageValuesRewritten": {
+        "ChineseName": "伤害数值重写(DamageValuesRewritten)",
+        "Desc": "当敌人受到伤害时，显示具体的伤害数值"
+    },
+    "Damage Values Rewritten": {
+        "ChineseName": "占位模组(DamageValuesRewritten)",
+        "Desc": "请直接安装DamageValuesRewritten"
     }
     
 }
