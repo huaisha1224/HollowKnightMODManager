@@ -2234,6 +2234,21 @@
     "Damage Values Rewritten": {
         "ChineseName": "占位模组(DamageValuesRewritten)",
         "Desc": "请直接安装DamageValuesRewritten"
+    },
+    "Fast World": {
+        "ChineseName": "极速世界(Fast World)",
+        "Desc": "通过改变整个世界的速度（唯独玩家速度不变），让你的圣巢（Hallownest）挑战难度更高"
+    },
+    "GeoPots": {
+        "ChineseName": "吉欧容器(GeoPots)",
+        "Desc": "打破矿车与木桶时，将有概率掉落吉欧"
+    },
+    "GeoBundles": {
+        "ChineseName": "吉欧串(GeoBundles)",
+        "Desc": "可以将吉欧存储在 “串” 中，以防止死亡时丢失，类似于《丝之歌》中的念珠串"
+    },
+    "BetterCrystalHeart": {
+        "ChineseName": "优化水晶之心(BetterCrystalHeart)",
+        "Desc": "该模组是针对游戏中 “水晶之心” 这一物品或技能进行优化，通过增加协同效应和加成，让其在伤害输出和充能时间方面有更好的表现，从而提升玩家的游戏体验"
     }
-    
 }
