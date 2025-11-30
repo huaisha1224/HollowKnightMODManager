@@ -2250,5 +2250,41 @@
     "BetterCrystalHeart": {
         "ChineseName": "优化水晶之心(BetterCrystalHeart)",
         "Desc": "该模组是针对游戏中 “水晶之心” 这一物品或技能进行优化，通过增加协同效应和加成，让其在伤害输出和充能时间方面有更好的表现，从而提升玩家的游戏体验"
+    },
+    "DoodleBosses": {
+        "ChineseName": "涂鸦风Boss合集(DoodleBosses)",
+        "Desc": "空洞骑士模组（HKM）社区 “涂鸦 Boss 计划” 的集大成之作，所有 Boss 均已变为超萌的涂鸦风格形象！"
+    },
+    "GodhomeGeo": {
+        "ChineseName": "神堂吉欧(GodhomeGeo)",
+        "Desc": "解除神堂里不掉吉欧的限制（注：神堂就是游戏里的神居挑战区，原本在神堂打 Boss、杀怪都不会掉吉欧，只能纯挑战"
+    },
+    "GripWall": {
+        "ChineseName": "攀墙无重力(GripWall)",
+        "Desc": "攀附在墙上时，减少甚至完全消除重力的影响"
+    },
+    "InfectedHallownest": {
+        "ChineseName": "感染圣巢(InfectedHallownest)",
+        "Desc": "给游戏新增一个新阶段：击败空洞骑士后，感染会蔓延到整个圣巢，还会随机强化游戏里的敌人"
+    },
+    "NoMaps": {
+        "ChineseName": "移除地图(NoMaps)",
+        "Desc": "移除屏幕上显示的地图"
+    },
+    "Nosk Transformatio": {
+        "ChineseName": "诺斯克变身(Nosk Transformatio)",
+        "Desc": "可以随心所欲变成诺斯克"
+    },
+    "RandoSBRCO": {
+        "ChineseName": "随机化护符顺序(RandoSBRCO)",
+        "Desc": "给游戏的随机化模组加了专属逻辑，能确保你设定好的护符获取顺序可以顺利执行"
+    },
+    "Restore NKG Title Card": {
+        "ChineseName": "恢复梦魇之王格林标题卡(Restore NKG Title Card)",
+        "Desc": "恢复神堂中梦魇之王格林（NKG）的专属标题卡"
+    },
+    "ShadeSnail": {
+        "ChineseName": "暗影蜗牛(ShadeSnail)",
+        "Desc": "生成一只不会死亡的暗影（Shade），一直跟在你身边"
     }
 }
